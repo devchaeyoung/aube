@@ -3,17 +3,7 @@
   background: #000;
   color: #fff;
   padding: 100px 20px;
-  padding-top: 20px;
   overflow: hidden;
-}
-
-.text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1.5rem;
-  color: rgba(255, 255, 255, 0.8);
 }
 
 .content {
@@ -28,7 +18,7 @@
 }
 
 .question {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   margin-bottom: 2rem;
   font-weight: 600;
 }
@@ -46,7 +36,7 @@
 .details p {
   color: #fff;
 
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
@@ -56,15 +46,16 @@
 }
 
 .highlightBox h3 {
-  font-size: 2rem;
+  font-size: 2.6rem;
   margin-bottom: 2rem;
-  color: #4ca685;
+  color: #fff;
 }
 
 .highlightBox p {
-  color: #ccc;
+  color: #fff;
   line-height: 1.8;
   margin-bottom: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .pointsBox {
@@ -72,12 +63,19 @@
 }
 
 .point {
-  border: 1px solid #4ca685;
+  border: 1px solid #62fde3;
   padding: 1.5rem;
   margin-bottom: 1rem;
   border-radius: 8px;
   color: #fff;
   background: rgba(76, 166, 133, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #62fde3;
+  text-align: center;
+  font-size: 1.3rem;
+  word-break: keep-all;
 }
 
 .signature {
@@ -105,5 +103,15 @@
   }
   .answerBox {
     margin-left: 0;
+  }
+  .question {
+    text-align: center;
+  }
+  .highlightBox h3 {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .questionBox {
+    margin-bottom: 10rem;
   }
 }
