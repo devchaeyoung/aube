@@ -18,6 +18,7 @@
 .cardContainer {
   max-width: 1200px;
   margin: 0 auto;
+  padding-bottom: 60px;
 }
 
 .desktopCards {
@@ -39,6 +40,7 @@
   height: 600px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 40px;
 }
 
 .card h3 {
@@ -84,3 +86,20 @@
 }
 
 /* ... 나머지 스타일 동일 */
+
+.swiper {
+  padding-bottom: 60px;
+}
+
+:global(.swiper-pagination-bullet) {
+  background: #62fde3 !important;
+  opacity: 0.5;
+}
+
+:global(.swiper-pagination-bullet-active) {
+  opacity: 1;
+}
+
+:global(.swiper-pagination) {
+  bottom: 0 !important;
+}

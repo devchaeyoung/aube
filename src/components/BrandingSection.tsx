@@ -1,8 +1,10 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
 import styles from "./BrandingSection.module.css";
 import "swiper/css";
+import "swiper/css/pagination";
 
 const brandingData = [
   {
@@ -43,7 +45,15 @@ export function BrandingSection() {
 
         {/* 모바일 뷰 */}
         <div className={styles.mobileCards}>
-          <Swiper spaceBetween={20} slidesPerView={1} centeredSlides={true} loop={true}>
+          <Swiper
+            spaceBetween={20}
+            slidesPerView={1}
+            centeredSlides={true}
+            loop={true}
+            pagination={{ clickable: true }}
+            modules={[Pagination]}
+            className={styles.swiper}
+          >
             {brandingData.map((item, index) => (
               <SwiperSlide key={index}>
                 <div className={styles.card}>
