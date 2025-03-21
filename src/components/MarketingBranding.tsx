@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import styles from "./MarketingBranding.module.css";
@@ -16,6 +17,37 @@ const brandingData = [
   {
     title: "눈길이 가는 디자인",
     description: "결국엔 우리 병원이 선택되도록, 기술적으로 높은 퀄리티의 호감 가는 디자인을 진행합니다.",
+  },
+];
+
+const scrollImages = [
+  {
+    src: "/assets/scrollImages/scroll-image1.webp",
+    alt: "이미지1",
+  },
+  {
+    src: "/assets/scrollImages/scroll-image2.webp",
+    alt: "이미지2",
+  },
+  {
+    src: "/assets/scrollImages/scroll-image3.webp",
+    alt: "이미지3",
+  },
+  {
+    src: "/assets/scrollImages/scroll-image4.webp",
+    alt: "이미지4",
+  },
+  {
+    src: "/assets/scrollImages/scroll-image5.webp",
+    alt: "이미지5",
+  },
+  {
+    src: "/assets/scrollImages/scroll-image6.webp",
+    alt: "이미지6",
+  },
+  {
+    src: "/assets/scrollImages/scroll-image7.webp",
+    alt: "이미지7",
   },
 ];
 
@@ -67,7 +99,26 @@ export function MarketingBranding() {
         하지만 저희는 마케팅에 실망한 원장님들께 제대로 된 마케팅 효과를 선물하고 싶습니다.
       </p>
 
-      <div className={styles.imageScroll}></div>
+      <div className={styles.imageScroll}>
+        <div className={styles.scrollTrack}>
+          {[...scrollImages, ...scrollImages].map((image, index) => (
+            <div key={index} className={styles.imageWrapper}>
+              <Image
+                src={image.src}
+                alt={image.alt}
+                width={0}
+                height={0}
+                sizes="100vw"
+                className={styles.scrollImage}
+                style={{
+                  width: "auto",
+                  height: "400px",
+                }}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
     </section>
   );
 }

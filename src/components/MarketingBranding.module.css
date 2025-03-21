@@ -90,3 +90,39 @@
     padding: 1rem;
   }
 }
+
+.imageScroll {
+  width: 100%;
+  overflow: hidden;
+  margin: 40px 0;
+}
+
+.scrollTrack {
+  display: flex;
+  animation: scrollLeft 20s linear infinite;
+  width: fit-content;
+  gap: 20px;
+}
+
+.imageWrapper {
+  flex-shrink: 0;
+}
+
+.scrollImage {
+  height: 400px !important;
+  width: auto !important;
+  object-fit: contain;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.scrollTrack:hover {
+  animation-play-state: paused;
+}
