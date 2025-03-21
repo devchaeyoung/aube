@@ -1,7 +1,11 @@
 "use client";
 
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
 import styles from "./MarketingSection.module.css";
+import "swiper/css";
+import "swiper/css/pagination";
 
 const marketingData = [
   {
@@ -39,7 +43,8 @@ export function MarketingSection() {
         </p>
       </div>
 
-      <div className={styles.content}>
+      {/* 데스크톱 뷰 */}
+      <div className={styles.desktopContent}>
         {marketingData.map((item, index) => (
           <div key={index} className={styles.card}>
             <div className={styles.cardHeader}>
@@ -52,6 +57,34 @@ export function MarketingSection() {
             <p className={styles.highlight}>{item.highlight}</p>
           </div>
         ))}
+      </div>
+
+      {/* 모바일 뷰 */}
+      <div className={styles.mobileContent}>
+        <Swiper
+          spaceBetween={20}
+          slidesPerView={1}
+          centeredSlides={true}
+          loop={true}
+          pagination={{ clickable: true }}
+          modules={[Pagination]}
+          className={styles.swiper}
+        >
+          {marketingData.map((item, index) => (
+            <SwiperSlide key={index}>
+              <div className={styles.card}>
+                <div className={styles.cardHeader}>
+                  <h4>{item.title}</h4>
+                  <p>{item.description}</p>
+                </div>
+                <div className={styles.imageWrapper}>
+                  <Image src={item.image} alt={item.title} width={300} height={300} />
+                </div>
+                <p className={styles.highlight}>{item.highlight}</p>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
 
       <div className={styles.footer}>

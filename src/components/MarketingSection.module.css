@@ -85,6 +85,16 @@
   margin-bottom: 1rem;
 }
 
+.desktopContent {
+  display: flex;
+  gap: 2rem;
+}
+
+.mobileContent {
+  display: none;
+}
+
+/* 모바일 스타일 */
 @media (max-width: 768px) {
   .content {
     grid-template-columns: 1fr;
@@ -106,5 +116,23 @@
 
   .card {
     margin-bottom: 40px;
+  }
+
+  .desktopContent {
+    display: none;
+  }
+
+  .mobileContent {
+    display: block;
+    width: 100%;
+  }
+
+  .swiper {
+    padding: 20px 0;
+  }
+
+  .card {
+    margin: 0 auto;
+    max-width: 300px;
   }
 }
