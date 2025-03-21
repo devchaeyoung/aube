@@ -1,0 +1,89 @@
+.branding {
+  background: #000;
+  padding: 100px 20px;
+  color: #fff;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  line-height: 1.4;
+}
+
+.highlight {
+  color: #4ca685;
+}
+
+.cardContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.desktopCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.mobileCards {
+  display: none;
+}
+
+.card {
+  background: linear-gradient(145deg, rgba(76, 166, 133, 0.1), rgba(0, 0, 255, 0.1));
+  border-radius: 20px;
+  padding: 40px 30px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+}
+
+.card h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.divider {
+  width: 40px;
+  height: 2px;
+  background: #4ca685;
+  margin: 20px 0;
+}
+
+.card p {
+  color: #ccc;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .desktopCards {
+    display: none;
+  }
+
+  .mobileCards {
+    display: block;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .card {
+    height: 250px;
+    padding: 30px 20px;
+  }
+
+  .card h3 {
+    font-size: 1.8rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+}
+
+/* ... 나머지 스타일 동일 */
