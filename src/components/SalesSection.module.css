@@ -1,0 +1,120 @@
+.sales {
+  color: #fff;
+  background-color: #000;
+  padding: 120px 20px;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2rem;
+}
+
+.contentBox {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.textContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textContent h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.textContent h3 {
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+}
+
+.textContent p {
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 1.8;
+}
+
+.circleContainer {
+  display: flex;
+  gap: 2rem;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.circle {
+  width: 280px;
+  height: 280px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.highlight {
+  border-color: #62fde3;
+  color: #62fde3;
+}
+
+.result {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+/* 모바일 스타일 */
+@media (max-width: 768px) {
+  .sales {
+    padding: 200px 20px;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .textContent h2 {
+    font-size: 1.6rem;
+  }
+
+  .textContent h3 {
+    font-size: 2rem;
+  }
+
+  .textContent p {
+    font-size: 1.1rem;
+  }
+
+  .circleContainer {
+    margin: 4rem 0;
+
+    justify-content: center;
+  }
+
+  .contentBox {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .circle {
+    width: 140px;
+    height: 140px;
+  }
+}

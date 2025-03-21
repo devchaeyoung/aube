@@ -2,6 +2,7 @@ import { Hero } from "@/components/Hero";
 import { HospitalIntro } from "@/components/HospitalIntro";
 import { BrandingSection } from "@/components/BrandingSection";
 import { MarketingSection } from "@/components/MarketingSection";
+import { SalesSection } from "@/components/SalesSection";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <HospitalIntro />
       <BrandingSection />
       <MarketingSection />
+      <SalesSection />
     </main>
   );
 }
