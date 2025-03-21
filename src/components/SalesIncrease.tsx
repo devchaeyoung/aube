@@ -35,32 +35,20 @@ const salesData = [
 ];
 const scrollImages = [
   {
-    src: "/assets/scrollImages/scroll-image1.webp",
+    src: "/assets/scrollImages/scroll-image8.webp",
     alt: "이미지1",
   },
   {
-    src: "/assets/scrollImages/scroll-image2.webp",
+    src: "/assets/scrollImages/scroll-image9.webp",
     alt: "이미지2",
   },
   {
-    src: "/assets/scrollImages/scroll-image3.webp",
+    src: "/assets/scrollImages/scroll-image10.webp",
     alt: "이미지3",
   },
   {
-    src: "/assets/scrollImages/scroll-image4.webp",
+    src: "/assets/scrollImages/scroll-image11.webp",
     alt: "이미지4",
-  },
-  {
-    src: "/assets/scrollImages/scroll-image5.webp",
-    alt: "이미지5",
-  },
-  {
-    src: "/assets/scrollImages/scroll-image6.webp",
-    alt: "이미지6",
-  },
-  {
-    src: "/assets/scrollImages/scroll-image7.webp",
-    alt: "이미지7",
   },
 ];
 
