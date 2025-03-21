@@ -1,6 +1,6 @@
 .branding {
   width: 100%;
-  padding: 4rem 2rem;
+  padding: 6rem 2rem;
   background-color: #1a1a1a;
   color: white;
 }
@@ -70,36 +70,15 @@
   line-height: 1.6;
 }
 
-@media (max-width: 768px) {
-  .titleContainer h3 {
-    font-size: 1.6rem;
-  }
-
-  .titleContainer h2 {
-    font-size: 1.6rem;
-  }
-  .desktopCards {
-    display: none;
-  }
-
-  .mobileCards {
-    display: block;
-  }
-
-  .swiper {
-    padding: 1rem;
-  }
-}
-
 .imageScroll {
   width: 100%;
   overflow: hidden;
-  margin: 40px 0;
+  margin: 6rem 0;
 }
 
 .scrollTrack {
   display: flex;
-  animation: scrollLeft 20s linear infinite;
+  animation: scrollLeft 36s linear infinite;
   width: fit-content;
   gap: 20px;
 }
@@ -120,6 +99,32 @@
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .titleContainer h3 {
+    font-size: 1.6rem;
+  }
+
+  .titleContainer h2 {
+    font-size: 1.6rem;
+  }
+  .desktopCards {
+    display: none;
+  }
+
+  .mobileCards {
+    display: block;
+  }
+
+  .swiper {
+    padding: 1rem;
+  }
+
+  /* 모바일에서 이미지 크기 조정 */
+  .scrollImage {
+    height: 200px !important;
   }
 }
 
