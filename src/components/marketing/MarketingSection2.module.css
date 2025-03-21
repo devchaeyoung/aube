@@ -1,0 +1,95 @@
+.marketing {
+  background: #000;
+  color: #fff;
+  padding: 100px 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.header h2 {
+  color: #62fde3;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.header h3 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.header p {
+  color: #ccc;
+  line-height: 1.8;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.card {
+  text-align: center;
+}
+
+.cardHeader {
+  margin-bottom: 30px;
+}
+
+.cardHeader h4 {
+  color: #62fde3;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.cardHeader p {
+  color: #fff;
+  line-height: 1.6;
+}
+
+.imageWrapper {
+  margin: 30px 0;
+  position: relative;
+  height: 300px;
+}
+
+.imageWrapper img {
+  object-fit: contain;
+}
+
+.highlight {
+  color: #fff;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.footer {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.footer p:first-child {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .header h3 {
+    font-size: 2rem;
+  }
+
+  .card {
+    margin-bottom: 40px;
+  }
+}
