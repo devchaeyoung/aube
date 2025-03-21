@@ -64,7 +64,7 @@ export function MarketingBranding() {
       <p className={styles.footer}>
         잘 되는 병원을 더 잘 되게 만드는 건 쉽습니다.
         <br />
-        하지만 저희는 마케팅에 실망 한 원장님들께 제대로 된 마케팅 효과를 선물하고 싶습니다.
+        하지만 저희는 마케팅에 실망한 원장님들께 제대로 된 마케팅 효과를 선물하고 싶습니다.
       </p>
 
       <div className={styles.imageScroll}></div>
