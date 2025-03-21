@@ -1,11 +1,11 @@
-import { Hero } from "@/components/Hero";
-import { HospitalIntro } from "@/components/HospitalIntro";
-import { BrandingSection } from "@/components/BrandingSection";
-import { MarketingSection } from "@/components/MarketingSection";
-import { SalesSection } from "@/components/SalesSection";
-import { MarketingBranding } from "@/components/MarketingBranding";
-import { SalesGrowth } from "@/components/SalesGrowth";
-import { SalesIncrease } from "@/components/SalesIncrease";
+import { Hero } from "@/components/hero/Hero";
+import { HospitalIntro } from "@/components/hospital/HospitalIntro";
+import { BrandingSection } from "@/components/branding/BrandingSection";
+import { MarketingSection } from "@/components/marketing/MarketingSection";
+import { SalesSection } from "@/components/sales/SalesSection";
+import { MarketingBranding } from "@/components/marketing/MarketingBranding";
+import { SalesGrowth } from "@/components/sales/SalesGrowth";
+import { SalesIncrease } from "@/components/sales/SalesIncrease";
 
 export default function Home() {
   return (
