@@ -6,8 +6,9 @@ import { SalesSection } from "@/components/sales/SalesSection";
 import { MarketingBranding } from "@/components/marketing/MarketingBranding";
 import { SalesGrowth } from "@/components/sales/SalesGrowth";
 import { SalesIncrease } from "@/components/sales/SalesIncrease";
-import { MarketingFeatures } from "@/components/marketing/MarketingFeatures";
 import { MarketingSection2 } from "@/components/marketing/MarketingSection2";
+import { MarketingProcess } from "@/components/marketing/MarketingProcess";
+
 export default function Home() {
   return (
     <main>
@@ -20,7 +21,7 @@ export default function Home() {
       <SalesGrowth />
       <SalesIncrease />
       <MarketingSection />
-      <MarketingFeatures />
+      <MarketingProcess />
     </main>
   );
 }

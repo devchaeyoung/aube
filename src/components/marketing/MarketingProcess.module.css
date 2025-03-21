@@ -1,0 +1,54 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+}
+
+.titleSection {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.titleSection h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.subtitle {
+  font-size: 2.3rem;
+  line-height: 1.8;
+  color: #fff;
+}
+
+.contentSection {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 4rem 1rem;
+  }
+
+  .titleSection {
+    margin-bottom: 3rem;
+  }
+
+  .titleSection h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+    br {
+      display: none;
+    }
+  }
+
+  .contentSection {
+    gap: 4rem;
+  }
+}
