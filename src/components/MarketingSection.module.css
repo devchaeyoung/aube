@@ -88,6 +88,11 @@
 .desktopContent {
   display: flex;
   gap: 2rem;
+
+  padding: 100px 20px;
+
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .mobileContent {
@@ -125,6 +130,7 @@
   .mobileContent {
     display: block;
     width: 100%;
+    padding: 60px 20px;
   }
 
   .swiper {
