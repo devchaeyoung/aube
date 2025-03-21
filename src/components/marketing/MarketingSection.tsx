@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "./MarketingSection.module.css";
+import Image from "next/image";
 
 export function MarketingSection() {
   return (
@@ -76,6 +77,21 @@ export function MarketingSection() {
             <br />
             앞으로의 전략과 방향을 제시하고 실행합니다.
           </p>
+        </motion.div>
+
+        <motion.div
+          className={styles.imageContainer}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.8 }}
+        >
+          <Image
+            src="/assets/marketingSection/image-group.png"
+            alt="마케팅 전략 이미지"
+            width={800}
+            height={400}
+            className={styles.groupImage}
+          />
         </motion.div>
       </div>
     </section>
