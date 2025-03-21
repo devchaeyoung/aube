@@ -3,6 +3,23 @@
   padding: 6rem 2rem;
   background-color: #000;
   color: white;
+  position: relative;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.header h2 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.header h3 {
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .container {
@@ -10,26 +27,11 @@
   margin: 0 auto;
   display: flex;
   gap: 4rem;
-  align-items: center;
+  margin-bottom: 3rem;
 }
 
 .content {
   flex: 1;
-}
-
-.header {
-  margin-bottom: 2rem;
-}
-
-.header h2 {
-  color: #fff;
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.header h3 {
-  font-size: 3rem;
-  font-weight: bold;
 }
 
 .highlight {
@@ -48,25 +50,29 @@
   font-size: 1.2rem;
 }
 
-.details {
-  color: #999;
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-.details p {
-  margin-bottom: 0.5rem;
-}
-
 .graph {
   flex: 1;
   position: relative;
+  margin-top: 4rem;
 }
 
 .graphImage {
   width: 100%;
   height: auto;
   object-fit: contain;
+}
+
+.details {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.details p {
+  margin-bottom: 0.5rem;
 }
 
 .stats {
@@ -84,7 +90,7 @@
 
 .stat span {
   font-size: 1rem;
-  color: #999;
+  color: #fff;
   margin-bottom: 0.5rem;
 }
 
@@ -102,9 +108,13 @@
   .header h3 {
     font-size: 2rem;
   }
+  .highlight {
+    text-align: center;
+    word-break: keep-all;
+  }
 
   .highlight h4 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
 
   .details {
