@@ -77,5 +77,11 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-bottom: 20rem;
+  padding: 10rem;
+}
+
+@media (max-width: 768px) {
+  .line {
+    padding: 6rem;
+  }
 }
