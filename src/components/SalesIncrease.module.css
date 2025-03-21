@@ -1,0 +1,113 @@
+.salesIncrease {
+  width: 100%;
+  padding: 6rem 2rem;
+  background-color: #000;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card {
+  background: #1a1a1a;
+  border-radius: 100px;
+  padding: 2rem 3rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hospitalName {
+  font-size: 1.8rem;
+  font-weight: bold;
+  min-width: 120px;
+}
+
+.salesInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 180px;
+}
+
+.label {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.amount {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 12px solid #62fde3;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+
+.period {
+  color: #62fde3;
+  font-size: 1.2rem;
+  min-width: 100px;
+}
+
+.finalSales {
+  font-size: 1.4rem;
+  font-weight: bold;
+  min-width: 140px;
+}
+
+.increase {
+  color: #62fde3;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 1.5rem;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    border-radius: 20px;
+  }
+
+  .hospitalName {
+    font-size: 1.4rem;
+    min-width: auto;
+  }
+
+  .salesInfo {
+    min-width: auto;
+    justify-content: center;
+  }
+
+  .label,
+  .amount {
+    font-size: 1rem;
+  }
+
+  .period {
+    font-size: 1rem;
+    min-width: auto;
+  }
+
+  .finalSales {
+    font-size: 1.2rem;
+    min-width: auto;
+  }
+
+  .increase {
+    font-size: 2rem;
+    margin-left: 0;
+  }
+}

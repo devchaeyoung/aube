@@ -5,6 +5,7 @@ import { MarketingSection } from "@/components/MarketingSection";
 import { SalesSection } from "@/components/SalesSection";
 import { MarketingBranding } from "@/components/MarketingBranding";
 import { SalesGrowth } from "@/components/SalesGrowth";
+import { SalesIncrease } from "@/components/SalesIncrease";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <SalesSection />
       <MarketingBranding />
       <SalesGrowth />
+      <SalesIncrease />
     </main>
   );
 }
