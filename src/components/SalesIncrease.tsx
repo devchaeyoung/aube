@@ -18,14 +18,14 @@ const salesData = [
     increase: "268",
   },
   {
-    name: "▲▲ 병원",
+    name: "●● 병원",
     initialSales: "3,590",
     period: "3개월 후",
     finalSales: "8,723",
     increase: "143",
   },
   {
-    name: "◆◆ 병원",
+    name: "●● 병원",
     initialSales: "3,952",
     period: "2개월 후",
     finalSales: "7,390",
@@ -47,12 +47,16 @@ export function SalesIncrease() {
               <span className={styles.amount}>{item.initialSales}만원</span>
             </div>
             <div className={styles.arrow} />
-            <div className={styles.period}>
-              <span>{item.period}</span>
+
+            <div className={styles.peridBox}>
+              <div className={styles.period}>
+                <span>{item.period}</span>
+              </div>
+              <div className={styles.finalSales}>
+                <span>{item.finalSales}만원</span>
+              </div>
             </div>
-            <div className={styles.finalSales}>
-              <span>{item.finalSales}만원</span>
-            </div>
+
             <div className={styles.increase}>
               <span>{item.increase}%</span>
             </div>
