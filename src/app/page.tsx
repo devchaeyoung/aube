@@ -3,6 +3,7 @@ import { HospitalIntro } from "@/components/HospitalIntro";
 import { BrandingSection } from "@/components/BrandingSection";
 import { MarketingSection } from "@/components/MarketingSection";
 import { SalesSection } from "@/components/SalesSection";
+import { MarketingBranding } from "@/components/MarketingBranding";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <BrandingSection />
       <MarketingSection />
       <SalesSection />
+      <MarketingBranding />
     </main>
   );
 }

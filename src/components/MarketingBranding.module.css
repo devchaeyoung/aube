@@ -1,0 +1,92 @@
+.branding {
+  width: 100%;
+  padding: 4rem 2rem;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.titleContainer {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.titleContainer h3 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.titleContainer h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.cardContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.desktopCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  padding: 2rem;
+  height: 500px;
+  background-image: url("/background/figure2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card h3 {
+  color: #4fffb0;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+.mobileCards {
+  display: none;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  color: #fff;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .titleContainer h3 {
+    font-size: 1.6rem;
+  }
+
+  .titleContainer h2 {
+    font-size: 1.6rem;
+  }
+  .desktopCards {
+    display: none;
+  }
+
+  .mobileCards {
+    display: block;
+  }
+
+  .swiper {
+    padding: 1rem;
+  }
+}
