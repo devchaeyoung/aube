@@ -18,6 +18,7 @@ export default function Home() {
       <MarketingBranding />
       <SalesGrowth />
       <SalesIncrease />
+      <MarketingSection />
     </main>
   );
 }

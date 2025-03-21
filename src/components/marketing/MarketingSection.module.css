@@ -1,144 +1,128 @@
 .marketing {
+  background: #111;
+  padding: 100px 20px;
   color: #fff;
 }
 
-.header {
+.title {
   text-align: center;
-  padding: 40px 20px;
-  background-color: #181818;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  line-height: 1.4;
 }
 
-.header h2 {
-  color: #fff;
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
-
-.header h3 {
-  font-size: 2.6rem;
-  margin-bottom: 2rem;
-}
-
-.header p {
-  color: #ccc;
-  font-size: 1.3rem;
-  line-height: 1.8;
-}
-
-.content {
+.cardContainer {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  margin-bottom: 80px;
-  padding: 100px 20px;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 24px;
+  position: relative;
+  padding-bottom: 200px;
 }
 
 .card {
+  background-color: #111;
+  padding: 32px;
+  border: 2px solid #62fde3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
   text-align: center;
+}
+
+.card:first-child {
+  border-radius: 16px 16px 0 0;
+}
+
+.card:nth-child(2) {
+  border-radius: 16px;
+}
+
+.card:nth-child(3) {
+  border-radius: 0 0 16px 16px;
 }
 
 .cardHeader {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
-.cardHeader h4 {
+.checkLabel {
+  background-image: url("/background/figure.png");
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+
+  position: absolute;
+  top: 24px;
+  left: 48px;
+}
+
+.card h3 {
+  color: #62fde3;
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+
+.card p {
+  line-height: 1.8;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.highlightCard {
+  background: #111;
+  border: 2px solid #62fde3;
+  border-radius: 16px;
+  padding: 32px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 0 60px rgba(98, 253, 227, 0.6);
+}
+
+.highlightCard h3 {
   color: #62fde3;
   font-size: 1.6rem;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
-.cardHeader p {
-  color: #fff;
-  font-size: 1.3rem;
-  line-height: 1.6;
-}
-
-.imageWrapper {
-  margin: 30px 0;
-  position: relative;
-  height: 300px;
-}
-
-.imageWrapper img {
-  object-fit: contain;
-}
-
-.highlight {
-  color: #62fde3;
-  font-weight: 600;
-  font-size: 1.3rem;
-  word-break: keep-all;
-  margin-top: 20px;
-}
-
-.footer {
-  text-align: center;
+.highlightCard p {
   line-height: 1.8;
-  font-size: 1.2rem;
-  background-color: #181818;
-  padding: 40px 20px;
+  color: rgba(255, 255, 255, 0.8);
 }
 
-.footer p:first-child {
-  margin-bottom: 1rem;
-}
-
-.desktopContent {
-  display: flex;
-  gap: 2rem;
-
-  padding: 100px 20px;
-
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.mobileContent {
-  display: none;
-}
-
-/* 모바일 스타일 */
 @media (max-width: 768px) {
-  .content {
+  .cardContainer {
     grid-template-columns: 1fr;
-    padding: 60px 20px;
-    margin-bottom: 0;
+    padding-bottom: 160px;
   }
 
-  .header h2 {
-    font-size: 1.6rem;
-  }
-
-  .header h3 {
+  .title {
     font-size: 2rem;
   }
-
-  .header p {
-    font-size: 1.1rem;
-  }
-
   .card {
-    margin-bottom: 40px;
+    padding: 0;
+    padding-top: 48px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
-
-  .desktopContent {
-    display: none;
+  .card p {
+    text-align: center;
+    word-break: keep-all;
+    font-size: 1rem;
   }
-
-  .mobileContent {
-    display: block;
-    width: 100%;
-    padding: 60px 20px;
-  }
-
-  .swiper {
-    padding: 20px 0;
-  }
-
-  .card {
-    margin: 0 auto;
-    max-width: 300px;
+  .checkLabel {
+    top: 12px;
+    left: 12px;
+    font-size: 0.8rem;
   }
 }
