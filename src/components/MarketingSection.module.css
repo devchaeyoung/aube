@@ -1,27 +1,27 @@
 .marketing {
-  background: #000;
   color: #fff;
-  padding: 100px 20px;
 }
 
 .header {
   text-align: center;
-  margin-bottom: 80px;
+  padding: 40px 20px;
+  background-color: #181818;
 }
 
 .header h2 {
-  color: #62fde3;
-  font-size: 1.2rem;
+  color: #fff;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 
 .header h3 {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   margin-bottom: 2rem;
 }
 
 .header p {
   color: #ccc;
+  font-size: 1.3rem;
   line-height: 1.8;
 }
 
@@ -32,6 +32,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-bottom: 80px;
+  padding: 100px 20px;
 }
 
 .card {
@@ -44,12 +45,13 @@
 
 .cardHeader h4 {
   color: #62fde3;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-bottom: 1rem;
 }
 
 .cardHeader p {
   color: #fff;
+  font-size: 1.3rem;
   line-height: 1.6;
 }
 
@@ -64,16 +66,19 @@
 }
 
 .highlight {
-  color: #fff;
+  color: #62fde3;
   font-weight: 600;
+  font-size: 1.3rem;
+  word-break: keep-all;
   margin-top: 20px;
 }
 
 .footer {
   text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
   line-height: 1.8;
+  font-size: 1.2rem;
+  background-color: #181818;
+  padding: 40px 20px;
 }
 
 .footer p:first-child {
@@ -83,10 +88,20 @@
 @media (max-width: 768px) {
   .content {
     grid-template-columns: 1fr;
+    padding: 60px 20px;
+    margin-bottom: 0;
+  }
+
+  .header h2 {
+    font-size: 1.6rem;
   }
 
   .header h3 {
     font-size: 2rem;
+  }
+
+  .header p {
+    font-size: 1.1rem;
   }
 
   .card {
