@@ -91,7 +91,7 @@
   padding-bottom: 60px;
 }
 
-:global(.swiper-pagination-bullet) {
+/* :global(.swiper-pagination-bullet) {
   background: #62fde3 !important;
   opacity: 0.5;
 }
@@ -102,4 +102,4 @@
 
 :global(.swiper-pagination) {
   bottom: 0 !important;
-}
+} */

@@ -358,9 +358,6 @@
   .processText p {
     font-size: 1rem;
     word-break: keep-all;
-    br {
-      display: none;
-    }
   }
 
   .processImage .image {
