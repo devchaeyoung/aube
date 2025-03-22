@@ -9,14 +9,15 @@
   padding: 6rem 2rem;
 }
 
-.titleSection h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
+.mainTitle {
+  font-size: 2.2rem;
+  font-weight: 300;
   color: #fff;
 }
 
 .subtitle {
-  font-size: 2.3rem;
+  font-size: 2.6rem;
+  font-weight: bold;
   line-height: 1.8;
   color: #fff;
 }
@@ -128,14 +129,14 @@
 }
 
 .subTitle {
-  color: #62fde3;
+  color: #fff;
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
 }
 
 .description {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   line-height: 1.8;
   margin-bottom: 4rem;
 }
@@ -143,25 +144,28 @@
 .compareBox {
   display: flex;
   gap: 2rem;
-  margin-bottom: 4rem;
   transform: translateY(-60px);
 }
+.compareItemWrapper {
+  position: relative;
+}
 
+.compareTitle {
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 2rem;
+}
 .compareItem {
   flex: 1;
   background: rgba(255, 255, 255, 0.05);
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 1rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.compareItem h4 {
-  color: #fff;
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
 }
 
 .compareItem p {
@@ -189,6 +193,84 @@
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 1.5rem;
+}
+
+.compareSection {
+  padding: 4rem 1rem;
+  margin-top: 10rem;
+  padding-bottom: 0;
+  padding-top: 0;
+  background-color: #181818;
+}
+
+.compareWrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+.compareBox {
+  flex: 1;
+  display: flex;
+  gap: 2rem;
+}
+
+.compareItem {
+  width: 300px;
+  height: 400px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background-image: url("/background/figure2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.compareItem h2 {
+  font-size: 1.8rem;
+  color: #dbdbdb;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.compareItem h3 {
+  font-size: 1.8rem;
+  color: #dbdbdb;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.compareItem.highlight {
+  background-color: rgba(98, 253, 227, 0.1);
+  color: #fff;
+  box-shadow: 0 0 15px #62fde3;
+}
+
+.highlight h3 {
+  font-weight: bold;
+  color: #fff;
+}
+
+.compareDescription {
+  flex: 1;
+}
+
+.compareDescription h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.compareDescription p {
+  color: #fff;
+  line-height: 1.6;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 1024px) {
@@ -248,6 +330,12 @@
 }
 
 @media (max-width: 768px) {
+  .compareSection {
+    padding: 0;
+  }
+  .compareWrapper {
+    padding: 4rem 2rem;
+  }
   .contentWrapper {
     padding-top: 8rem;
   }
@@ -272,14 +360,27 @@
     font-size: 1.1rem;
   }
 
+  .compareBox {
+    gap: 1rem;
+  }
+
   .compareItem {
     width: 100% !important;
     height: 240px !important;
     border-radius: 28px !important;
     padding: 1rem !important;
   }
+
+  .compareItem h2 {
+    font-size: 1rem;
+  }
+
+  .compareTitle {
+    font-size: 1rem;
+  }
   .compareItem h3 {
     font-size: 1rem;
+    word-break: keep-all;
     margin-bottom: 0.5rem;
   }
 
@@ -320,6 +421,15 @@
   }
   .speechBubble p {
     font-size: 0.95rem;
+  }
+
+  .compareDescription h3 {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+  }
+  .compareDescription p {
+    font-size: 1rem;
+    word-break: keep-all;
   }
 }
 
@@ -365,71 +475,6 @@
   }
 }
 
-.compareSection {
-  padding: 4rem 1rem;
-  margin-top: 10rem;
-  padding-bottom: 0;
-  padding-top: 0;
-  background-color: #181818;
-}
-
-.compareWrapper {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  display: flex;
-  gap: 4rem;
-  align-items: center;
-}
-
-.compareBox {
-  flex: 1;
-  display: flex;
-  gap: 2rem;
-}
-
-.compareItem {
-  width: 300px;
-  height: 400px;
-  box-sizing: border-box;
-  border-radius: 30px;
-  background-image: url("/background/figure2.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.compareItem.highlight {
-  background-color: rgba(98, 253, 227, 0.1);
-  color: #fff;
-  box-shadow: 0 0 15px #62fde3;
-}
-
-.highlight p {
-  font-weight: bold;
-  color: #62fde3;
-}
-
-.compareDescription {
-  flex: 1;
-}
-
-.compareDescription h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 1.5rem;
-  color: #62fde3;
-}
-
-.compareDescription p {
-  color: #fff;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-}
-
 /* 모바일 반응형 */
 @media (max-width: 768px) {
   .compareWrapper {
@@ -439,12 +484,5 @@
 
   .compareBox {
     width: 100%;
-  }
-
-  .compareDescription {
-    width: 100%;
-    text-align: center;
-    font-size: 0.9rem;
-    word-break: keep-all;
   }
 }
