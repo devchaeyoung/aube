@@ -144,6 +144,7 @@
   display: flex;
   gap: 2rem;
   margin-bottom: 4rem;
+  transform: translateY(-60px);
 }
 
 .compareItem {
@@ -152,16 +153,20 @@
   padding: 2rem;
   border-radius: 1rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .compareItem h4 {
   color: #fff;
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .compareItem p {
   color: rgba(255, 255, 255, 0.8);
+  font-size: 1.4rem;
 }
 
 .highlight {
@@ -210,6 +215,18 @@
     min-height: 400px;
     width: 100%;
   }
+  .compareWrapper {
+    padding: 4rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .compareDescription {
+    text-align: center;
+  }
+
+  .compareBox {
+    transform: translateY(0);
+  }
 
   .speechBubble {
     max-width: 220px;
@@ -255,8 +272,19 @@
     font-size: 1.1rem;
   }
 
-  .compareBox {
-    flex-direction: column;
+  .compareItem {
+    width: 100% !important;
+    height: 240px !important;
+    border-radius: 28px !important;
+    padding: 1rem !important;
+  }
+  .compareItem h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .compareItem p {
+    font-size: 1rem;
   }
 
   .bottomText h3 {
@@ -340,6 +368,8 @@
 .compareSection {
   padding: 4rem 1rem;
   margin-top: 10rem;
+  padding-bottom: 0;
+  padding-top: 0;
   background-color: #181818;
 }
 
@@ -348,7 +378,7 @@
   margin: 0 auto;
   display: flex;
   gap: 4rem;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .compareBox {
@@ -361,18 +391,26 @@
   width: 300px;
   height: 400px;
   box-sizing: border-box;
-  border-radius: 12px;
+  border-radius: 30px;
   background-image: url("/background/figure2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .compareItem.highlight {
   background-color: rgba(98, 253, 227, 0.1);
-  border: 2px solid #62fde3;
-  color: #333;
+  color: #fff;
+  box-shadow: 0 0 15px #62fde3;
+}
+
+.highlight p {
+  font-weight: bold;
+  color: #62fde3;
 }
 
 .compareDescription {
@@ -387,7 +425,7 @@
 }
 
 .compareDescription p {
-  color: #666;
+  color: #fff;
   line-height: 1.6;
   margin-bottom: 1rem;
 }
@@ -405,5 +443,8 @@
 
   .compareDescription {
     width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    word-break: keep-all;
   }
 }
