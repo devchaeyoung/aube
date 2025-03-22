@@ -100,6 +100,10 @@
   transform: translateY(-180px);
 }
 
+.imageTransform2 {
+  transform: translateY(-30px);
+}
+
 .largeImage {
   flex: 1.2;
 }
@@ -207,6 +211,15 @@
   height: auto;
 }
 
+.textCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textCenter p {
+  margin-top: 4rem;
+}
 @media (max-width: 1024px) {
   .titleSection {
     padding: 4rem 2rem;
@@ -224,7 +237,8 @@
     flex-direction: column;
   }
 
-  .imageTransform {
+  .imageTransform,
+  .imageTransform2 {
     transform: translateY(0);
   }
   .contentBox {

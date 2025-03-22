@@ -144,6 +144,36 @@ export function MarketingProcess() {
           </div>
         </div>
       </div>
+      <div className={styles.contentSection}>
+        <div className={`${styles.contentWrapper}`}>
+          <div className={styles.leftContent}>
+            <div className={styles.contentBox}>
+              <div className={styles.flexCenter}>
+                <div className={`${styles.imageWrapper2} ${styles.imageTransform2}`}>
+                  <Image
+                    src="/assets/marketingProcess/imageGroup.png"
+                    alt="타사 블로그 포스팅"
+                    width={700}
+                    height={420}
+                    className={styles.image}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.rightContent}>
+            <div className={`${styles.rightBox} ${styles.textCenter}`}>
+              <h3>초진 환자 관리하는 예약부도 방지 시스템</h3>
+              <h2>SNS MARKETING</h2>
+              <p>
+                다양한 컨텐츠를 꾸준하게 노출하여 초진 환자의 접근성을 높이는 시스템, 오늘의 브랜딩이 만드는 사이클
+                안에서 성장해보세요.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
