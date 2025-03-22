@@ -6,10 +6,10 @@
 
 .titleSection {
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 8rem 2rem;
+  padding: 6rem 2rem;
 }
 
 .titleSection h2 {
@@ -56,12 +56,10 @@
 .leftContent {
   flex: 1;
   width: 100%;
-  border: 1px solid red;
 }
 .rightContent {
   flex: 1;
   width: 100%;
-  border: 1px solid red;
 }
 
 .imageWrapper {
@@ -141,32 +139,102 @@
 }
 
 @media (max-width: 1024px) {
-  .contentBox {
+  .titleSection {
+    padding: 4rem 2rem;
+  }
+
+  .titleSection h2 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.8rem;
+  }
+
+  .contentWrapper {
     flex-direction: column;
+  }
+
+  .contentBox {
+    flex-direction: row;
+  }
+
+  .leftContent,
+  .rightContent {
+    width: 100%;
+  }
+
+  .rightContent {
+    margin-top: 3rem;
+  }
+
+  .rightBox {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .rightBox p {
+    margin-top: 3rem;
   }
 
   .image,
   .largeImage .image {
     width: 100%;
-    max-width: 430px;
+    max-width: 380px;
   }
 }
 
 @media (max-width: 768px) {
-  .container {
-    padding: 4rem 1rem;
+  .titleSection {
+    padding: 3rem 1rem;
+    padding-top: 6rem;
   }
 
-  .titleSection {
-    margin-bottom: 3rem;
+  .titleSection h2 {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+
+  .contentSection {
+    background-color: #000;
+  }
+  .alignLeft {
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .alignLeft .image {
+    width: 140px;
+    height: 140px;
+  }
+  .alignRight {
+    justify-content: flex-end;
+  }
+
+  .contentWrapper {
+    padding: 0 1rem;
   }
 
   .imageBox {
-    padding: 1rem;
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .imageWrapper {
+    height: 300px;
   }
 
   .textContent h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+
+  .textContent p {
+    font-size: 0.8rem;
+  }
+  .rightContent {
+    margin-top: 1rem;
   }
 
   .rightBox {
@@ -174,6 +242,49 @@
   }
 
   .rightBox h3 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+  }
+
+  .rightBox h2 {
+    font-size: 2rem;
+  }
+
+  .rightBox p {
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .titleSection {
+    padding: 2rem 1rem;
+    padding-top: 6rem;
+  }
+
+  .titleSection h2 {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .leftContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contentBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .imageWrapper {
+    height: 250px;
+  }
+
+  .image,
+  .largeImage .image {
+    max-width: 300px;
   }
 }
