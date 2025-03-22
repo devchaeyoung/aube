@@ -1,3 +1,8 @@
+.container p {
+  font-size: 1.2rem;
+  color: #fff;
+  line-height: 1.8;
+}
 .titleSection {
   text-align: center;
   margin-bottom: 3rem;
@@ -110,16 +115,22 @@
 .textContent {
   text-align: center;
 }
-.textContent h3 {
-  font-size: 1.4rem;
+
+.mainTitle {
+  font-size: 2rem;
   font-weight: 600;
   color: #fff;
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
 }
+.highlightTitle {
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: #62fde3;
+}
 
 .textContent p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #fff;
 }
 
@@ -131,23 +142,9 @@
   text-align: right;
 }
 
-.rightBox h3 {
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 1rem;
-}
-
-.rightBox h2 {
-  font-size: 2.6rem;
-  font-weight: bold;
-  color: #62fde3;
-}
 .rightBox p {
   margin-top: 8rem;
-  font-size: 1.1rem;
   line-height: 1.8;
-  color: #fff;
 }
 
 .processSection {
@@ -173,24 +170,8 @@
   flex: 1;
 }
 
-.processText h3 {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 1rem;
-}
-
-.processText h2 {
-  font-size: 2.6rem;
-  font-weight: bold;
-  color: #62fde3;
-  margin-bottom: 2rem;
-}
-
 .processText p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #fff;
+  margin-top: 2rem;
 }
 
 .processImage {
@@ -207,7 +188,6 @@
 
 .textCenter {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 

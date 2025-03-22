@@ -8,7 +8,7 @@ export function MarketingProcess() {
     <section className={styles.container}>
       <div className={styles.titleSection}>
         <h2>A-Z 까지 필요한건 다 준비했습니다</h2>
-        <p className={styles.subtitle}>원장님은 진료만 보세요</p>
+        <h3 className={styles.subtitle}>원장님은 진료만 보세요</h3>
       </div>
 
       <div className={styles.contentSection}>
@@ -54,8 +54,8 @@ export function MarketingProcess() {
 
           <div className={styles.rightContent}>
             <div className={styles.rightBox} style={{ marginTop: "2rem" }}>
-              <h3>신뢰가 느껴지는 전문 지식 컬럼 포스팅</h3>
-              <h2>BLOG POSTING</h2>
+              <h3 className={styles.mainTitle}>신뢰가 느껴지는 전문 지식 컬럼 포스팅</h3>
+              <h2 className={styles.highlightTitle}>BLOG POSTING</h2>
               <p>
                 오늘의 브랜딩은 의료인의 직접 시술이나 의료 서비스에 대한 전문 지식을 포스팅 합니다. 신뢰감을 바탕으로
                 제작된 블로그 관리를 시작해보세요.
@@ -68,8 +68,8 @@ export function MarketingProcess() {
         <div className={styles.processBox}>
           <div className={styles.processContent}>
             <div className={styles.processText}>
-              <h3>재진율을 올려주는 컨텐츠 시스템</h3>
-              <h2>PLACE MARKETING</h2>
+              <h3 className={styles.mainTitle}>재진율을 올려주는 컨텐츠 시스템</h3>
+              <h2 className={styles.highlightTitle}>PLACE MARKETING</h2>
               <p>
                 검색 시 보이는 이미지는 우리 병원의 첫인상입니다.
                 <br />
@@ -110,8 +110,8 @@ export function MarketingProcess() {
 
           <div className={styles.rightContent}>
             <div className={styles.rightBox}>
-              <h3>초진 환자 관리하는 예약부도 방지 시스템</h3>
-              <h2>SNS MARKETING</h2>
+              <h3 className={styles.mainTitle}>초진 환자 관리하는 예약부도 방지 시스템</h3>
+              <h2 className={styles.highlightTitle}>SNS MARKETING</h2>
               <p>
                 다양한 컨텐츠를 꾸준하게 노출하여 초진 환자의 접근성을 높이는 시스템, 오늘의 브랜딩이 만드는 사이클
                 안에서 성장해보세요.
@@ -124,8 +124,8 @@ export function MarketingProcess() {
         <div className={styles.processBox}>
           <div className={styles.processContent}>
             <div className={styles.processText}>
-              <h3>재진율을 올려주는 컨텐츠 시스템</h3>
-              <h2>PLACE MARKETING</h2>
+              <h3 className={styles.mainTitle}>재진율을 올려주는 컨텐츠 시스템</h3>
+              <h2 className={styles.highlightTitle}>PLACE MARKETING</h2>
               <p>
                 검색 시 보이는 이미지는 우리 병원의 첫인상입니다.
                 <br />
@@ -166,8 +166,8 @@ export function MarketingProcess() {
 
           <div className={styles.rightContent}>
             <div className={`${styles.rightBox} ${styles.textCenter}`}>
-              <h3>초진 환자 관리하는 예약부도 방지 시스템</h3>
-              <h2>SNS MARKETING</h2>
+              <h3 className={styles.mainTitle}>초진 환자 관리하는 예약부도 방지 시스템</h3>
+              <h2 className={styles.highlightTitle}>SNS MARKETING</h2>
               <p>
                 다양한 컨텐츠를 꾸준하게 노출하여 초진 환자의 접근성을 높이는 시스템, 오늘의 브랜딩이 만드는 사이클
                 안에서 성장해보세요.
