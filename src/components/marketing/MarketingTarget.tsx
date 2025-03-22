@@ -26,11 +26,17 @@ export function MarketingTarget() {
 
           <div className={styles.pinImageContainer}>
             <div className={styles.speechBubble}>
+              <div className={styles.alphabet}>
+                <Image src="/assets/Q.png" alt="알파벳 Q" width={63} height={50} />
+              </div>
               <p>
                 경쟁 병원과 <strong style={{ color: "#62fde3" }}>중복 계약하지 않는 이유</strong>가 뭔가요?
               </p>
             </div>
             <div className={`${styles.speechBubble} ${styles.response}`}>
+              <div className={styles.alphabet}>
+                <Image src="/assets/A.png" alt="알파벳 A" width={63} height={50} />
+              </div>
               <p>
                 <strong style={{ color: "#62fde3" }}>한 병원의 성공에 집중</strong>하기 위해서 입니다.
                 <br />
