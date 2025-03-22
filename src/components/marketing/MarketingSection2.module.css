@@ -96,10 +96,10 @@
 
 .footer {
   text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
   line-height: 1.8;
-  padding-top: 4rem;
+  background-color: #181818;
+  font-size: 1.6rem;
+  padding: 4rem 2rem;
 }
 
 .footer p:first-child {
@@ -117,38 +117,94 @@
 
 .mobileContent {
   display: none;
+  padding: 2rem 1rem;
+}
+
+.swiper {
+  padding: 1rem 0 3rem;
+  height: auto;
+  min-height: 600px; /* 슬라이드 높이 고정 */
 }
 
 /* 모바일 스타일 */
 @media (max-width: 768px) {
+  .marketing {
+    padding: 0;
+  }
   .desktopContent {
     display: none;
   }
 
   .mobileContent {
     display: block;
-    padding: 1rem;
   }
 
-  .swiper {
-    padding: 1rem 0 3rem;
+  .header {
+    padding: 2rem 1rem;
+  }
+
+  .header h2 {
+    font-size: 1.8rem;
   }
 
   .header h3 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
+  .header p {
+    font-size: 1.2rem;
+  }
+
+  /* 모바일 카드 스타일 유지 */
   .card {
-    margin-bottom: 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 0; /* 마진 제거 */
+  }
+
+  .cardHeader h4 {
+    font-size: 1.8rem; /* 모바일에서 약간 작게 */
+  }
+
+  .cardHeader p {
+    min-height: unset; /* 모바일에서는 고정 높이 해제 */
+    margin-bottom: 1rem;
+  }
+
+  .imageWrapper {
+    flex: 1;
+    margin: 1.5rem 0;
+  }
+
+  .imageWrapper img {
+    max-height: 250px; /* 이미지 최대 높이 제한 */
+  }
+
+  .footer p {
+    margin: 0 !important;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+    padding: 2rem 0.3rem;
+    line-height: 1.5;
+    word-break: keep-all;
+  }
+  .highlight {
+    min-height: unset; /* 모바일에서는 고정 높이 해제 */
+    padding-top: 1.5rem;
   }
 }
 
 /* Swiper 커스텀 스타일 */
 :global(.swiper-pagination-bullet) {
-  background: #000;
+  background: #62fde3;
   opacity: 0.2;
 }
 
 :global(.swiper-pagination-bullet-active) {
   opacity: 1;
+  background: #62fde3;
 }
