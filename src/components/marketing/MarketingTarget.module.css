@@ -28,10 +28,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 2rem;
 }
 
 .messageBox {
-  flex: 1;
+  flex: 0 0 50%;
 }
 
 .message {
@@ -47,16 +48,77 @@
   line-height: 1.6;
 }
 
-.pinImage {
-  flex: 1;
+.pinImageContainer {
+  position: relative;
+  flex: 0 0 50%;
   display: flex;
   justify-content: center;
+  min-height: 400px;
+}
+
+.speechBubble {
+  position: absolute;
+  background-color: #4f4f4f;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.6rem;
+  min-width: 400px;
+  max-width: 412px;
+  max-height: 100px;
+  top: -160px;
+  left: 40px;
+  z-index: 10;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+}
+
+.speechBubble p {
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-weight: 500;
+  margin: 0;
+  text-align: left;
+}
+
+.speechBubble::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 30px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #4f4f4f;
+}
+
+.response {
+  top: -30px;
+  left: auto;
+  right: 140px;
+}
+
+.response::after {
+  left: auto;
+  right: 30px;
+}
+
+.pinImage {
+  position: absolute;
+  bottom: 50%;
+  left: 40%;
+  transform: translate(-50%, 50%);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .darkSection {
   background-color: #181818;
-  padding: 6rem 0;
-  margin-top: 4rem;
+  margin-top: 10rem;
 }
 
 .darkContent {
@@ -126,26 +188,67 @@
 
 @media (max-width: 1024px) {
   .contentWrapper {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    text-align: center;
+    word-break: keep-all;
     gap: 3rem;
+    padding-top: 6rem;
   }
-
+  .pinImage {
+    left: 50%;
+    max-width: 200px;
+  }
+  .pinImage img {
+    width: 100%;
+    height: 100%;
+  }
   .messageBox {
     width: 100%;
+  }
+
+  .pinImageContainer {
+    min-height: 400px;
+    width: 100%;
+  }
+
+  .speechBubble {
+    max-width: 220px;
+  }
+  .speechBubble {
+    top: 0;
+    left: 0;
+  }
+  .response {
+    top: 0;
+    right: 0;
+  }
+
+  .response {
+    top: 100px;
+    left: auto;
+    right: 0;
   }
 }
 
 @media (max-width: 768px) {
+  .contentWrapper {
+    padding-top: 8rem;
+  }
   .titleSection {
     padding: 4rem 1rem;
+    padding-bottom: 0;
+    padding-top: 10rem;
   }
 
   .titleSection h2 {
     font-size: 2rem;
   }
 
-  .subtitle {
+  .pinImage img .subtitle {
     font-size: 1.8rem;
+  }
+  .darkSection {
+    margin-top: 4rem;
   }
 
   .message p {
@@ -162,6 +265,33 @@
 
   .bottomText p br {
     display: none;
+  }
+
+  .pinImageContainer {
+    min-height: 300px;
+  }
+  .pinImage {
+    max-width: 140px;
+  }
+
+  .speechBubble {
+    min-width: unset;
+    min-width: 300px;
+    max-height: unset;
+    max-height: 72px;
+    top: -80px;
+    left: 120px;
+    padding: 0.7rem 1rem;
+    border-radius: 14px;
+  }
+
+  .response {
+    top: 20px;
+    left: auto;
+    right: 120px;
+  }
+  .speechBubble p {
+    font-size: 0.95rem;
   }
 }
 
@@ -192,5 +322,17 @@
 
   .compareItem h4 {
     font-size: 1.2rem;
+  }
+
+  .pinImageContainer {
+    min-height: 250px;
+  }
+
+  .speechBubble {
+    padding: 0.6rem 0.9rem;
+  }
+
+  .speechBubble p {
+    font-size: 0.9rem;
   }
 }

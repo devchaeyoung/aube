@@ -11,27 +11,36 @@ export function MarketingTarget() {
         <p className={styles.subtitle}>동일 과목은 받지 않습니다</p>
       </div>
 
-      <div className={styles.contentSection}>
+      <div className={styles.darkSection}>
         <div className={styles.contentWrapper}>
           <div className={styles.messageBox}>
-            <div className={styles.message}>
+            <h3 className={styles.subTitle}>오직 한 병원만을 위한 전략적인 마케팅</h3>
+            <p className={styles.description}>
+              오늘의 브랜딩은 한 지역, 한 병원과 계약한다는 원칙을 갖고 있습니다.
+              <br />
+              따라서 동일 과목은 받지 않습니다.
+            </p>
+          </div>
+
+          <div className={styles.pinImageContainer}>
+            <div className={styles.speechBubble}>
               <p>정형 병원과 중복 계약하지 않는 이유가 뭔가요?</p>
             </div>
-            <div className={styles.message}>
+            <div className={`${styles.speechBubble} ${styles.response}`}>
               <p>
                 한 병원의 성공에 집중하기 위해서 입니다.
                 <br />
                 오늘의 브랜딩은 신뢰를 최우선으로 합니다.
               </p>
             </div>
-          </div>
-          <div className={styles.pinImage}>
-            <Image src="/assets/marketing/pin.png" alt="Location Pin" width={400} height={400} />
+            <div className={styles.pinImage}>
+              <Image src="/assets/map.webp" alt="Location Pin" width={245} height={365} />
+            </div>
           </div>
         </div>
       </div>
 
-      <div className={styles.darkSection}>
+      {/* <div className={styles.darkSection}>
         <div className={styles.darkContent}>
           <h3 className={styles.subTitle}>오직 한 병원만을 위한 전략적인 마케팅</h3>
           <p className={styles.description}>
@@ -63,7 +72,7 @@ export function MarketingTarget() {
             <p>오늘의 브랜딩, 오직 원장님 병원의 매출 상승을 위한 전략으로 준비되어 있습니다.</p>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
