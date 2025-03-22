@@ -1,0 +1,196 @@
+.container {
+  background-color: #000;
+}
+
+.titleSection {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+}
+
+.titleSection h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.subtitle {
+  font-size: 2.3rem;
+  line-height: 1.8;
+  color: #fff;
+}
+
+.contentWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.messageBox {
+  flex: 1;
+}
+
+.message {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.message p {
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.pinImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.darkSection {
+  background-color: #181818;
+  padding: 6rem 0;
+  margin-top: 4rem;
+}
+
+.darkContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.subTitle {
+  color: #62fde3;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 4rem;
+}
+
+.compareBox {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.compareItem {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.compareItem h4 {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.compareItem p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.highlight {
+  border: 1px solid #62fde3;
+}
+
+.bottomText {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.bottomText h3 {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.bottomText p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .contentWrapper {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .messageBox {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .titleSection {
+    padding: 4rem 1rem;
+  }
+
+  .titleSection h2 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.8rem;
+  }
+
+  .message p {
+    font-size: 1.1rem;
+  }
+
+  .compareBox {
+    flex-direction: column;
+  }
+
+  .bottomText h3 {
+    font-size: 1.6rem;
+  }
+
+  .bottomText p br {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .titleSection h2 {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+
+  .message {
+    padding: 1rem 1.5rem;
+  }
+
+  .message p {
+    font-size: 1rem;
+  }
+
+  .subTitle {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+  }
+
+  .compareItem h4 {
+    font-size: 1.2rem;
+  }
+}
