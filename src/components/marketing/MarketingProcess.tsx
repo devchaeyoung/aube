@@ -62,6 +62,32 @@ export function MarketingProcess() {
           </div>
         </div>
       </div>
+      <div className={styles.processSection}>
+        <div className={styles.processBox}>
+          <div className={styles.processContent}>
+            <div className={styles.processText}>
+              <h3>재진율을 올려주는 컨텐츠 시스템</h3>
+              <h2>PLACE MARKETING</h2>
+              <p>
+                검색 시 보이는 이미지는 우리 병원의 첫인상입니다.
+                <br />
+                고객의 선택에 가장 많은 비중을 차지하는 플레이스부터
+                <br />
+                인테리어 이미지까지, 오늘의 브랜딩은 신뢰감을 주는 첫인상을 만들어 드립니다.
+              </p>
+            </div>
+            <div className={styles.processImage}>
+              <Image
+                src="/assets/marketingProcess/place-marketing.png"
+                alt="플레이스 마케팅"
+                width={500}
+                height={400}
+                className={styles.image}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }

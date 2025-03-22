@@ -136,6 +136,60 @@
   color: rgba(255, 255, 255, 0.8);
 }
 
+.processSection {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.processBox {
+  position: relative;
+}
+
+.processContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+
+.processText {
+  flex: 1;
+}
+
+.processText h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.processText h2 {
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: #62fde3;
+  margin-bottom: 2rem;
+}
+
+.processText p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.processImage {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.processImage .image {
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+  transform: translateY(-100px);
+}
+
 @media (max-width: 1024px) {
   .titleSection {
     padding: 4rem 2rem;
@@ -180,12 +234,32 @@
     width: 100%;
     max-width: 380px;
   }
+
+  .processContent {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .processText {
+    text-align: center;
+  }
+
+  .processImage {
+    justify-content: center;
+  }
+
+  .processImage .image {
+    max-width: 100%;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 768px) {
   .titleSection {
     padding: 3rem 1rem;
     padding-top: 6rem;
+    padding-bottom: 0;
   }
 
   .titleSection h2 {
@@ -251,12 +325,38 @@
     font-size: 1rem;
     margin-top: 2rem;
   }
+
+  .processSection {
+    padding: 3rem 1rem;
+  }
+
+  .processText h3 {
+    font-size: 1.2rem;
+  }
+
+  .processText h2 {
+    font-size: 2rem;
+  }
+
+  .processText p {
+    font-size: 1rem;
+    word-break: keep-all;
+    br {
+      display: none;
+    }
+  }
+
+  .processImage .image {
+    max-width: 80%;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 480px) {
   .titleSection {
     padding: 2rem 1rem;
     padding-top: 6rem;
+    padding-bottom: 0;
   }
 
   .titleSection h2 {
@@ -284,5 +384,17 @@
   .image,
   .largeImage .image {
     max-width: 300px;
+  }
+
+  .processSection {
+    padding: 2rem 1rem;
+  }
+
+  .processText h2 {
+    font-size: 1.8rem;
+  }
+
+  .processImage .image {
+    max-width: 100%;
   }
 }
