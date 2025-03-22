@@ -3,24 +3,6 @@
 import Image from "next/image";
 import styles from "./MarketingProcess.module.css";
 
-interface ContentCardProps {
-  imageUrl: string;
-  title: string;
-  description: string;
-}
-
-function ContentCard({ imageUrl, title, description }: ContentCardProps) {
-  return (
-    <div className={styles.card}>
-      <div className={styles.imageWrapper}>
-        <Image src={imageUrl} alt={title} width={300} height={200} className={styles.cardImage} />
-      </div>
-      <h3 className={styles.cardTitle}>{title}</h3>
-      <p className={styles.cardDescription}>{description}</p>
-    </div>
-  );
-}
-
 export function MarketingProcess() {
   return (
     <section className={styles.container}>
