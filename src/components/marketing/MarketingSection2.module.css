@@ -40,38 +40,55 @@
 }
 
 .card {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background: #000;
+  border-radius: 1rem;
+  padding: 2rem;
+  height: 100%;
+  position: relative;
 }
 
 .cardHeader {
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
 }
 
 .cardHeader h4 {
-  color: #62fde3;
-  font-size: 1.5rem;
+  color: #4ae8c0;
+  font-size: 2rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .cardHeader p {
   color: #fff;
+  font-size: 1.1rem;
   line-height: 1.6;
+  text-align: center;
+  min-height: 3.2rem; /* 2줄 높이 고정 */
 }
 
 .imageWrapper {
-  margin: 30px 0;
-  position: relative;
-  height: 300px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
 }
 
 .imageWrapper img {
+  width: 100%;
+  height: auto;
   object-fit: contain;
 }
 
 .highlight {
-  color: #fff;
-  font-weight: 600;
-  margin-top: 20px;
+  color: #4ae8c0;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: auto;
+  padding-top: 2rem;
+  min-height: 4rem; /* 하이라이트 텍스트 영역 높이 고정 */
 }
 
 .footer {
@@ -90,6 +107,9 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 1rem;
 }
 
 .mobileContent {
