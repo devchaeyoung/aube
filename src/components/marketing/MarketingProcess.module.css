@@ -23,8 +23,82 @@
 
 .contentSection {
   display: flex;
+  justify-content: space-between;
+}
+
+.contentBox {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.imageBox {
+  flex: 1;
+  display: flex;
   flex-direction: column;
-  gap: 8rem;
+  align-items: center;
+  height: 500px;
+  border: 1px solid red;
+}
+
+.largeImage {
+  flex: 1.2;
+}
+
+.largeImage .image {
+  width: 430px;
+  height: auto;
+}
+
+.textContent {
+  text-align: center;
+}
+
+.textContent h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.textContent p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.rightBox {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rightBox h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.rightBox p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 1024px) {
+  .contentBox {
+    flex-direction: column;
+  }
+
+  .image,
+  .largeImage .image {
+    width: 100%;
+    max-width: 430px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -36,19 +110,19 @@
     margin-bottom: 3rem;
   }
 
-  .titleSection h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+  .imageBox {
+    padding: 1rem;
   }
 
-  .subtitle {
-    font-size: 1.1rem;
-    br {
-      display: none;
-    }
+  .textContent h3 {
+    font-size: 1.2rem;
   }
 
-  .contentSection {
-    gap: 4rem;
+  .rightBox {
+    padding: 1.5rem;
+  }
+
+  .rightBox h3 {
+    font-size: 1.4rem;
   }
 }
