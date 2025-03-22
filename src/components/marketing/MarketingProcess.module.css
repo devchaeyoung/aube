@@ -110,8 +110,6 @@
 }
 
 .rightBox {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 1rem;
   padding: 2rem;
   height: 100%;
   display: flex;
@@ -132,7 +130,7 @@
   color: #62fde3;
 }
 .rightBox p {
-  margin-top: 10rem;
+  margin-top: 8rem;
   font-size: 1.1rem;
   line-height: 1.8;
   color: rgba(255, 255, 255, 0.8);

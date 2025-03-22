@@ -116,7 +116,6 @@
 @media (max-width: 768px) {
   .cardContainer {
     grid-template-columns: 1fr;
-    padding-bottom: 160px;
   }
 
   .title {
