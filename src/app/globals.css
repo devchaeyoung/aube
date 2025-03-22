@@ -1,6 +1,7 @@
 :root {
   --background: #000;
   --foreground: #fff;
+  --max-width: 1440px;
 }
 
 * {

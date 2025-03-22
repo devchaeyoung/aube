@@ -24,7 +24,7 @@
 }
 
 .container {
-  max-width: 1200px;
+  max-width: var(--max-width);
   margin: 0 auto;
   display: flex;
   gap: 4rem;
@@ -65,7 +65,7 @@
 }
 
 .details {
-  max-width: 1200px;
+  max-width: var(--max-width);
   margin: 0 auto;
   color: #fff;
   font-size: 1.1rem;

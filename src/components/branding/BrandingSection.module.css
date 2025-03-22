@@ -16,7 +16,7 @@
 }
 
 .cardContainer {
-  max-width: 1200px;
+  max-width: var(--max-width);
   margin: 0 auto;
   padding-bottom: 60px;
 }

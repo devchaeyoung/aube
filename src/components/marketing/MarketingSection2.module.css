@@ -31,7 +31,7 @@
 }
 
 .content {
-  max-width: 1200px;
+  max-width: var(--max-width);
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -110,7 +110,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  max-width: 1200px;
+  max-width: var(--max-width);
   margin: 4rem auto;
   padding: 0 1rem;
 }
