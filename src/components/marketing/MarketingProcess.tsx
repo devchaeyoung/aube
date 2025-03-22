@@ -33,13 +33,16 @@ export function MarketingProcess() {
         <div className={styles.leftContent}>
           <div className={styles.contentBox}>
             <div className={styles.imageBox}>
-              <Image
-                src="/assets/marketingProcess/image1.png"
-                alt="타사 블로그 포스팅"
-                width={280}
-                height={220}
-                className={styles.image}
-              />
+              <div className={`${styles.imageWrapper} ${styles.alignLeft}`}>
+                <Image
+                  src="/assets/marketingProcess/image1.png"
+                  alt="타사 블로그 포스팅"
+                  width={280}
+                  height={220}
+                  className={styles.image}
+                />
+              </div>
+
               <div className={styles.textContent}>
                 <h3>타사</h3>
                 <p>일반적인 정보 전달형 포스팅</p>
@@ -47,13 +50,15 @@ export function MarketingProcess() {
             </div>
 
             <div className={`${styles.imageBox} ${styles.largeImage}`}>
-              <Image
-                src="/assets/marketingProcess/image2.png"
-                alt="오늘의 브랜딩"
-                width={380}
-                height={260}
-                className={styles.image}
-              />
+              <div className={`${styles.imageWrapper} ${styles.alignRight}`}>
+                <Image
+                  src="/assets/marketingProcess/image2.png"
+                  alt="오늘의 브랜딩"
+                  width={380}
+                  height={260}
+                  className={styles.image}
+                />
+              </div>
               <div className={styles.textContent}>
                 <h3>오늘의 브랜딩</h3>
                 <p>전문지식이 접목된 칼럼형 포스팅</p>
@@ -65,6 +70,7 @@ export function MarketingProcess() {
         <div className={styles.rightContent}>
           <div className={styles.rightBox}>
             <h3>신뢰가 느껴지는 전문 지식 컬럼 포스팅</h3>
+            <h2>BLOG POSTING</h2>
             <p>
               오늘의 브랜딩은 의료인의 직접 시술이나 의료 서비스에 대한 전문 지식을 포스팅 합니다. 신뢰감을 바탕으로
               제작된 블로그 관리를 시작해보세요.
