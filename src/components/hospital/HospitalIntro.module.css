@@ -25,13 +25,20 @@
 
 .answer {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   line-height: 1.8;
   margin-bottom: 2rem;
 }
 
 .answerBox {
   margin-left: 22rem;
+}
+
+.highlightBox strong {
+  font-size: 1.6rem;
+}
+.defail string {
+  font-size: 1.6rem;
 }
 .details p {
   color: #fff;
@@ -74,7 +81,7 @@
   align-items: center;
   color: #62fde3;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   word-break: keep-all;
 }
 
@@ -100,6 +107,7 @@
 
   .point {
     font-size: 0.9rem;
+    display: block;
   }
   .answerBox {
     margin-left: 0;
