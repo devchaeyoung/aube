@@ -74,15 +74,36 @@
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.8;
+  padding-top: 4rem;
 }
 
 .footer p:first-child {
   margin-bottom: 1rem;
 }
 
+.desktopContent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.mobileContent {
+  display: none;
+}
+
+/* 모바일 스타일 */
 @media (max-width: 768px) {
-  .content {
-    grid-template-columns: 1fr;
+  .desktopContent {
+    display: none;
+  }
+
+  .mobileContent {
+    display: block;
+    padding: 1rem;
+  }
+
+  .swiper {
+    padding: 1rem 0 3rem;
   }
 
   .header h3 {
@@ -92,4 +113,14 @@
   .card {
     margin-bottom: 40px;
   }
+}
+
+/* Swiper 커스텀 스타일 */
+:global(.swiper-pagination-bullet) {
+  background: #000;
+  opacity: 0.2;
+}
+
+:global(.swiper-pagination-bullet-active) {
+  opacity: 1;
 }
