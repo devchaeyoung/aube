@@ -27,7 +27,7 @@ export function MarketingProcess() {
                 </div>
 
                 <div className={styles.textContent}>
-                  <h3>타사</h3>
+                  <h3 style={{ color: "#bcbcbc" }}>타사</h3>
                   <p>일반적인 정보 전달형 포스팅</p>
                 </div>
               </div>
@@ -44,14 +44,16 @@ export function MarketingProcess() {
                 </div>
                 <div className={styles.textContent}>
                   <h3>오늘의 브랜딩</h3>
-                  <p>전문지식이 접목된 칼럼형 포스팅</p>
+                  <p style={{ color: "#62fde3" }}>
+                    전문지식이 접목된 <strong>칼럼형 포스팅</strong>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
 
           <div className={styles.rightContent}>
-            <div className={styles.rightBox}>
+            <div className={styles.rightBox} style={{ marginTop: "2rem" }}>
               <h3>신뢰가 느껴지는 전문 지식 컬럼 포스팅</h3>
               <h2>BLOG POSTING</h2>
               <p>

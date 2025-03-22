@@ -116,12 +116,12 @@
 .textContent {
   text-align: center;
 }
-
 .textContent h3 {
   font-size: 1.4rem;
   font-weight: 600;
   color: #fff;
   margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .textContent p {
