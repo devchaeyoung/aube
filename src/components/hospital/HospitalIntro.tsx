@@ -7,7 +7,10 @@ export function HospitalIntro() {
     <section className={styles.intro}>
       <div className={styles.content}>
         <div className={styles.questionBox}>
-          <h2 className={styles.question}>원장님, 병원을 운영하면서 가장 큰 고민이 무엇인가요?</h2>
+          <h2 className={styles.question}>
+            원장님, 병원을 운영하면서 <br />
+            가장 큰 고민이 무엇인가요?
+          </h2>
           <div className={styles.answerBox}>
             <p className={styles.answer}>
               환자가 줄어들까 봐, 매출이 떨어질까 봐, 제대로 된 마케팅을 해야 하는데 방법을 몰라서...
@@ -26,7 +29,10 @@ export function HospitalIntro() {
         </div>
 
         <div className={styles.highlightBox}>
-          <h3>마케팅은 환자와 병원을 이어주는 가장 중요한 다리입니다.</h3>
+          <h3>
+            마케팅은 환자와 병원을 이어주는 <br />
+            가장 중요한 다리입니다.
+          </h3>
           <p>
             <strong>병원은 단순한 &apos;비즈니스&apos;가 아닙니다.</strong>
             <br />

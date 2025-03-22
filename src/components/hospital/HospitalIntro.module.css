@@ -95,10 +95,22 @@
   font-size: 2rem;
   margin-left: 1rem;
 }
+.question br {
+  display: none;
+}
+.highlightBox br {
+  display: none;
+}
 
 @media (max-width: 768px) {
   .question {
     font-size: 1.8rem;
+  }
+  .question br {
+    display: block;
+  }
+  .highlightBox br {
+    display: block;
   }
 
   .highlightBox h3 {
