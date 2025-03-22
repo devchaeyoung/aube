@@ -1,0 +1,143 @@
+.container {
+  background-color: #000;
+  padding: 6rem 1rem;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.header h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.header p {
+  font-size: 1.5rem;
+  color: #62fde3;
+}
+
+.contactInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+  gap: 2rem;
+}
+
+.infoItem h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.infoItem p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.infoItem a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.infoItem a:hover {
+  color: #62fde3;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  width: 100%;
+}
+
+.formRow {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.formRow input {
+  flex: 1;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.form textarea {
+  height: 150px;
+  resize: none;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.submitButton {
+  width: 100%;
+  padding: 1.2rem;
+  background-color: #62fde3;
+  border: none;
+  border-radius: 8px;
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #4fd9c2;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 4rem 1rem;
+  }
+
+  .header h2 {
+    font-size: 1.5rem;
+  }
+
+  .header p {
+    font-size: 1.2rem;
+  }
+
+  .contactInfo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .infoItem h3 {
+    font-size: 1.4rem;
+  }
+
+  .infoItem p {
+    font-size: 1rem;
+  }
+
+  .formRow {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
