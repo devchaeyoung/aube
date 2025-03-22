@@ -19,7 +19,7 @@ export function MarketingProcess() {
                 <div className={`${styles.imageWrapper} ${styles.alignLeft}`}>
                   <Image
                     src="/assets/marketingProcess/image1.png"
-                    alt="타사 블로그 포스팅"
+                    alt="일반적인 정보 전달형 블로그 포스팅 예시"
                     width={280}
                     height={220}
                     className={styles.image}
@@ -36,7 +36,7 @@ export function MarketingProcess() {
                 <div className={`${styles.imageWrapper} ${styles.alignRight}`}>
                   <Image
                     src="/assets/marketingProcess/image2.png"
-                    alt="오늘의 브랜딩"
+                    alt="전문지식이 접목된 칼럼형 블로그 포스팅 예시"
                     width={380}
                     height={260}
                     className={styles.image}
@@ -81,7 +81,7 @@ export function MarketingProcess() {
             <div className={`${styles.processImage}  ${styles.imageTransform}`}>
               <Image
                 src="/assets/marketingProcess/place-marketing.png"
-                alt="플레이스 마케팅"
+                alt="병원 플레이스 마케팅 예시 이미지"
                 width={500}
                 height={400}
                 className={`${styles.image}`}
@@ -98,7 +98,7 @@ export function MarketingProcess() {
                 <div className={`${styles.imageWrapper2}`}>
                   <Image
                     src="/assets/marketingProcess/image3.png"
-                    alt="타사 블로그 포스팅"
+                    alt="SNS 마케팅을 통한 예약 관리 시스템 화면"
                     width={700}
                     height={420}
                     className={styles.image}
@@ -134,10 +134,10 @@ export function MarketingProcess() {
                 인테리어 이미지까지, 오늘의 브랜딩은 신뢰감을 주는 첫인상을 만들어 드립니다.
               </p>
             </div>
-            <div className={styles.processImage}>
+            <div className={`${styles.processImage} ${styles.maxWidth}`}>
               <Image
                 src="/assets/marketingProcess/image4.png"
-                alt="플레이스 마케팅"
+                alt="병원 마케팅 컨텐츠 시스템 대시보드"
                 width={500}
                 height={400}
                 className={`${styles.image}`}
@@ -151,10 +151,10 @@ export function MarketingProcess() {
           <div className={styles.leftContent}>
             <div className={styles.contentBox}>
               <div className={styles.flexCenter}>
-                <div className={`${styles.imageWrapper2} ${styles.imageTransform2}`}>
+                <div className={`${styles.imageWrapper2} ${styles.imageTransform2} ${styles.maxWidth}`}>
                   <Image
                     src="/assets/marketingProcess/imageGroup.png"
-                    alt="타사 블로그 포스팅"
+                    alt="통합 마케팅 관리 시스템 인터페이스"
                     width={700}
                     height={420}
                     className={styles.image}

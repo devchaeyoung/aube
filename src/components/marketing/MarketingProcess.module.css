@@ -179,6 +179,13 @@
   display: flex;
   justify-content: flex-end;
 }
+.maxWidth {
+  width: 100%;
+  max-width: 100%;
+}
+.maxWidth img {
+  width: 100%;
+}
 
 .processImage .image {
   object-fit: contain;
