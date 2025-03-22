@@ -4,11 +4,20 @@
   color: #fff;
 }
 
-.title {
+.titleContainer {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 60px;
   line-height: 1.4;
+}
+
+.titleContainer h2 {
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+.titleContainer h3 {
+  font-size: 2.6rem;
+  font-weight: bold;
 }
 
 .cardContainer {
@@ -34,15 +43,15 @@
 }
 
 .card:first-child {
-  border-radius: 16px 16px 0 0;
+  border-radius: 50px 50px 0 0;
 }
 
 .card:nth-child(2) {
-  border-radius: 16px;
+  border-radius: 0px;
 }
 
 .card:nth-child(3) {
-  border-radius: 0 0 16px 16px;
+  border-radius: 0 0 50px 50px;
 }
 
 .cardHeader {
@@ -67,20 +76,19 @@
 
 .card h3 {
   color: #62fde3;
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 16px;
 }
 
 .card p {
+  font-size: 1.4rem;
   line-height: 1.8;
   color: #fff;
-  font-size: 1.2rem;
 }
 
 .highlightCard {
   background: #111;
-  border: 2px solid #62fde3;
-  border-radius: 16px;
+  border-radius: 50px;
   padding: 32px;
   width: 100%;
   text-align: center;
@@ -89,13 +97,14 @@
 
 .highlightCard h3 {
   color: #62fde3;
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin-bottom: 16px;
 }
 
 .highlightCard p {
+  font-size: 1.4rem;
   line-height: 1.8;
-  color: rgba(255, 255, 255, 0.8);
+  color: #fff;
 }
 
 .imageContainer {
@@ -118,8 +127,12 @@
     grid-template-columns: 1fr;
   }
 
-  .title {
-    font-size: 2rem;
+  .titleContainer h2 {
+    font-size: 1.6rem;
+  }
+  .titleContainer h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
   }
   .card {
     padding: 0;
@@ -133,6 +146,21 @@
     word-break: keep-all;
     font-size: 1rem;
   }
+  .card h3 {
+    font-size: 1.8rem;
+  }
+  .highlightCard {
+    border-radius: 28px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .highlightCard h3 {
+    font-size: 1.8rem;
+  }
+  .highlightCard p {
+    font-size: 1rem;
+  }
+
   .checkLabel {
     top: 12px;
     left: 12px;
@@ -147,5 +175,17 @@
   .groupImage {
     max-width: 100%;
     padding: 0;
+  }
+
+  .card:first-child {
+    border-radius: 28px 28px 0 0;
+  }
+
+  .card:nth-child(2) {
+    border-radius: 0px;
+  }
+
+  .card:nth-child(3) {
+    border-radius: 0 0 28px 28px;
   }
 }
