@@ -35,7 +35,7 @@ export function MarketingSection2() {
         <p>
           서로가 1등이라고 하는데 막상 어떤 기준으로 골라야 할지 고민되시죠?
           <br />
-          지금은 &apos;의료 쇼핑 시대&apos;
+          <strong>지금은 &apos;의료 쇼핑 시대&apos;</strong>
           <br />
           고객이 어떻게 이동하는지 파악할 줄 아는 마케팅 업체를 선택하셔야 합니다.
         </p>
