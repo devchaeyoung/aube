@@ -54,17 +54,19 @@
 }
 
 .cardHeader h4 {
-  color: #4ae8c0;
+  color: #62fde3;
   font-size: 2rem;
   margin-bottom: 1rem;
+  font-weight: 500;
   text-align: center;
 }
 
 .cardHeader p {
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.6;
   text-align: center;
+  font-weight: 500;
   min-height: 3.2rem; /* 2줄 높이 고정 */
 }
 
@@ -73,7 +75,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 .imageWrapper img {
@@ -83,10 +85,11 @@
 }
 
 .highlight {
-  color: #4ae8c0;
-  font-size: 1.1rem;
+  color: #62fde3;
+  font-size: 1.2rem;
   text-align: center;
   margin-top: auto;
+  font-weight: 500;
   padding-top: 2rem;
   min-height: 4rem; /* 하이라이트 텍스트 영역 높이 고정 */
 }
