@@ -55,16 +55,15 @@ export function HospitalIntro() {
 
           <div className={styles.pointsBox}>
             <div className={styles.point}>
-              그냥 광고를 집행하는 것에서 끝나는 게 아니라, <br />
+              그냥 광고를 집행하는 것에서 끝나는 게 아니라,
               <strong>병원의 브랜드를 만들겠습니다.</strong>
             </div>
             <div className={styles.point}>
-              <strong>원장님의 철학과 진료 가치</strong>를 <br />
-              환자들이 느낄 수 있도록 기획하겠습니다.
+              <strong>원장님의 철학과 진료 가치</strong>를 환자들이 느낄 수 있도록 기획하겠습니다.
             </div>
             <div className={styles.point}>
               병원이 단기적인 마케팅에 흔들리지 않도록,
-              <br /> <strong>지속적인 성장</strong>을 만들어 드리겠습니다.
+              <strong>지속적인 성장</strong>을 만들어 드리겠습니다.
             </div>
           </div>
         </div>
