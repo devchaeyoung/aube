@@ -62,6 +62,62 @@ export function MarketingProcess() {
           </div>
         </div>
       </div>
+      <div className={`${styles.processSection} ${styles.processSection2}`}>
+        <div className={styles.processBox}>
+          <div className={styles.processContent}>
+            <div className={styles.processText}>
+              <h3>재진율을 올려주는 컨텐츠 시스템</h3>
+              <h2>PLACE MARKETING</h2>
+              <p>
+                검색 시 보이는 이미지는 우리 병원의 첫인상입니다.
+                <br />
+                고객의 선택에 가장 많은 비중을 차지하는 플레이스부터
+                <br />
+                인테리어 이미지까지, 오늘의 브랜딩은 신뢰감을 주는 첫인상을 만들어 드립니다.
+              </p>
+            </div>
+            <div className={`${styles.processImage}  ${styles.imageTransform}`}>
+              <Image
+                src="/assets/marketingProcess/place-marketing.png"
+                alt="플레이스 마케팅"
+                width={500}
+                height={400}
+                className={`${styles.image}`}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={styles.contentSection}>
+        <div className={`${styles.contentWrapper} ${styles.paddingContent}`}>
+          <div className={styles.leftContent}>
+            <div className={styles.contentBox}>
+              <div className={styles.flexCenter}>
+                <div className={`${styles.imageWrapper2}`}>
+                  <Image
+                    src="/assets/marketingProcess/image3.png"
+                    alt="타사 블로그 포스팅"
+                    width={700}
+                    height={420}
+                    className={styles.image}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.rightContent}>
+            <div className={styles.rightBox}>
+              <h3>초진 환자 관리하는 예약부도 방지 시스템</h3>
+              <h2>SNS MARKETING</h2>
+              <p>
+                다양한 컨텐츠를 꾸준하게 노출하여 초진 환자의 접근성을 높이는 시스템, 오늘의 브랜딩이 만드는 사이클
+                안에서 성장해보세요.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className={styles.processSection}>
         <div className={styles.processBox}>
           <div className={styles.processContent}>
@@ -78,11 +134,11 @@ export function MarketingProcess() {
             </div>
             <div className={styles.processImage}>
               <Image
-                src="/assets/marketingProcess/place-marketing.png"
+                src="/assets/marketingProcess/image4.png"
                 alt="플레이스 마케팅"
                 width={500}
                 height={400}
-                className={styles.image}
+                className={`${styles.image}`}
               />
             </div>
           </div>
