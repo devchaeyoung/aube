@@ -111,14 +111,15 @@
   .branding {
     padding-bottom: 3rem;
   }
-  .titleContainer h3 {
-    font-size: 1.6rem;
-  }
+
   .footer {
     font-size: 1.2rem;
     margin-bottom: 6rem;
   }
   .titleContainer h2 {
+    font-size: 1.8rem;
+  }
+  .titleContainer h3 {
     font-size: 1.6rem;
   }
   .desktopCards {

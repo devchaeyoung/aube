@@ -95,12 +95,11 @@
     text-align: center;
   }
 
-  .textContent h2 {
+  .title h2 {
     font-size: 1.6rem;
   }
-
-  .textContent h3 {
-    font-size: 2rem;
+  .title h3 {
+    font-size: 1.8rem;
   }
 
   .textContent p {

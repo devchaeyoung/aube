@@ -13,12 +13,13 @@
 
 .header h2 {
   color: #fff;
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 0.5rem;
+  font-weight: 300;
 }
 
 .header h3 {
-  font-size: 3rem;
+  font-size: 2.6rem;
   font-weight: bold;
 }
 
@@ -27,7 +28,7 @@
   margin: 0 auto;
   display: flex;
   gap: 4rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .content {
@@ -39,15 +40,16 @@
 }
 
 .highlight h4 {
-  color: #4fffb0;
-  font-size: 2rem;
+  color: #62fde3;
+  font-size: 2.2rem;
+  font-weight: 600;
   line-height: 1.4;
   margin-bottom: 1rem;
 }
 
 .highlight p {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 .graph {
@@ -106,7 +108,10 @@
   }
 
   .header h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+  .header h2 {
+    font-size: 1.6rem;
   }
   .highlight {
     text-align: center;
