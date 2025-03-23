@@ -15,7 +15,7 @@ import AosInit from "@/components/AosInit";
 export default function Home() {
   return (
     <>
-      <AosInit />
+      {/* <AosInit /> */}
       <main>
         <Hero />
         <HospitalIntro />

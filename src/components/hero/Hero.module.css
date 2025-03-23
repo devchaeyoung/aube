@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background-color: red;
 }
 
 .backgroundImage {
