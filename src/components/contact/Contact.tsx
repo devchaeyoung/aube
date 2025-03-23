@@ -60,41 +60,30 @@ export function Contact() {
           <div className={styles.right}>
             <form onSubmit={handleSubmit} className={styles.form}>
               <div className={styles.formGroup}>
-                <input
-                  type="text"
-                  name="businessName"
-                  value={formData.businessName}
-                  onChange={handleChange}
-                  placeholder="상호명 *"
-                  required
-                />
+                <label>
+                  상호명 <span className={styles.required}>*</span>
+                </label>
+                <input type="text" name="businessName" value={formData.businessName} onChange={handleChange} required />
               </div>
               <div className={styles.formRow}>
-                <input
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  placeholder="성함 *"
-                  required
-                />
-                <input
-                  type="tel"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  placeholder="연락처 *"
-                  required
-                />
+                <div className={styles.formGroup}>
+                  <label>
+                    성함 <span className={styles.required}>*</span>
+                  </label>
+                  <input type="text" name="name" value={formData.name} onChange={handleChange} required />
+                </div>
+                <div className={styles.formGroup}>
+                  <label>
+                    연락처 <span className={styles.required}>*</span>
+                  </label>
+                  <input type="tel" name="phone" value={formData.phone} onChange={handleChange} required />
+                </div>
               </div>
               <div className={styles.formGroup}>
-                <textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  placeholder="상담 내용 및 필요 서비스를 입력해 주세요 *"
-                  required
-                />
+                <label>
+                  상담 내용 및 필요 서비스를 입력해 주세요 <span className={styles.required}>*</span>
+                </label>
+                <textarea name="message" value={formData.message} onChange={handleChange} required />
               </div>
               <button type="submit" className={styles.submitButton}>
                 문의하기
