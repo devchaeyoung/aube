@@ -1,6 +1,6 @@
 .container {
   background-color: #000;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .titleSection {
