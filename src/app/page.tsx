@@ -11,22 +11,26 @@ import { MarketingProcess } from "@/components/marketing/MarketingProcess";
 import { MarketingTarget } from "@/components/marketing/MarketingTarget";
 import { Contact } from "@/components/contact/Contact";
 import { Footer } from "@/components/footer/Footer";
+import AosInit from "@/components/AosInit";
 export default function Home() {
   return (
-    <main>
-      <Hero />
-      <HospitalIntro />
-      <BrandingSection />
-      <MarketingSection2 />
-      <SalesSection />
-      <MarketingBranding />
-      <SalesGrowth />
-      <SalesIncrease />
-      <MarketingSection />
-      <MarketingProcess />
-      <MarketingTarget />
-      <Contact />
+    <>
+      <AosInit />
+      <main>
+        <Hero />
+        <HospitalIntro />
+        <BrandingSection />
+        <MarketingSection2 />
+        <SalesSection />
+        <MarketingBranding />
+        <SalesGrowth />
+        <SalesIncrease />
+        <MarketingSection />
+        <MarketingProcess />
+        <MarketingTarget />
+        <Contact />
+      </main>
       <Footer />
-    </main>
+    </>
   );
 }
