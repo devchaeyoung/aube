@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import styles from "./Contact.module.css";
 
 interface FormData {
@@ -37,7 +38,9 @@ export function Contact() {
       <div className={styles.wrapper}>
         <div className={styles.header}>
           <h2>죄송합니다. 현재 문의 연락이 많습니다.</h2>
-          <p>지역별 선착순 단 1곳만 계약 가능합니다.</p>
+          <h3>
+            지역별 <strong style={{ color: "#62fde3" }}>선착순 단 1곳만 계약 가능</strong> 합니다.
+          </h3>
         </div>
 
         <div className={styles.content}>
@@ -48,12 +51,14 @@ export function Contact() {
                 <h3>오늘이 가장 유리합니다.</h3>
               </div>
               <div className={styles.infoItem}>
-                <p>
+                <div className={styles.contactLink}>
+                  <Image src="/assets/contact.png" alt="phone" width={40} height={40} className={styles.icon} />
                   <a href="tel:010-3018-1144">010 . 3018 . 1144</a>
-                </p>
-                <p>
+                </div>
+                <div className={styles.contactLink}>
+                  <Image src="/assets/message.png" alt="email" width={40} height={40} className={styles.icon} />
                   <a href="mailto:aube_korea@naver.com">aube_korea@naver.com</a>
-                </p>
+                </div>
               </div>
             </div>
           </div>
