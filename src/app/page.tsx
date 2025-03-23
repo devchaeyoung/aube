@@ -10,6 +10,7 @@ import { MarketingSection2 } from "@/components/marketing/MarketingSection2";
 import { MarketingProcess } from "@/components/marketing/MarketingProcess";
 import { MarketingTarget } from "@/components/marketing/MarketingTarget";
 import { Contact } from "@/components/contact/Contact";
+import { Footer } from "@/components/footer/Footer";
 export default function Home() {
   return (
     <main>
@@ -25,6 +26,7 @@ export default function Home() {
       <MarketingProcess />
       <MarketingTarget />
       <Contact />
+      <Footer />
     </main>
   );
 }
