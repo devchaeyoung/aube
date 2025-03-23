@@ -24,7 +24,7 @@ const brandingData = [
 export function BrandingSection() {
   return (
     <section className={styles.branding}>
-      <h2 className={styles.title} data-aos="fade-up">
+      <h2 className={styles.title}>
         오늘의 브랜딩은
         <br />
         <span className={styles.highlight}>[ AUBE ]</span>
@@ -35,7 +35,7 @@ export function BrandingSection() {
         {/* 데스크톱 뷰 */}
         <div className={styles.desktopCards}>
           {brandingData.map((item, index) => (
-            <div key={index} className={styles.card} data-aos="fade-up" data-aos-delay={index * 200}>
+            <div key={index} className={styles.card}>
               <h3>{item.title}</h3>
               <div className={styles.divider} />
               <p>{item.description}</p>
@@ -44,7 +44,7 @@ export function BrandingSection() {
         </div>
 
         {/* 모바일 뷰 */}
-        <div className={styles.mobileCards} data-aos="fade-up">
+        <div className={styles.mobileCards}>
           <Swiper
             spaceBetween={20}
             slidesPerView={1}
