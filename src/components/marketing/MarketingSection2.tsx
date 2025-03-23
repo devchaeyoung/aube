@@ -30,9 +30,9 @@ export function MarketingSection2() {
   return (
     <section className={styles.marketing}>
       <div className={styles.header}>
-        <h2>마케팅 광고 1위 업체</h2>
-        <h3>왜 이렇게 많아?</h3>
-        <p>
+        <h2 data-aos="fade-up">마케팅 광고 1위 업체</h2>
+        <h3 data-aos="fade-up">왜 이렇게 많아?</h3>
+        <p data-aos="fade-up">
           서로가 1등이라고 하는데 막상 어떤 기준으로 골라야 할지 고민되시죠?
           <br />
           <strong>지금은 &apos;의료 쇼핑 시대&apos;</strong>
@@ -44,7 +44,7 @@ export function MarketingSection2() {
       {/* 데스크톱 뷰 */}
       <div className={styles.desktopContent}>
         {marketingData.map((item, index) => (
-          <div key={index} className={styles.card}>
+          <div key={index} className={styles.card} data-aos="fade-up" data-aos-delay={index * 200}>
             <div className={styles.cardHeader}>
               <h4>{item.title}</h4>
               <p>{item.description}</p>
@@ -58,7 +58,7 @@ export function MarketingSection2() {
       </div>
 
       {/* 모바일 뷰 */}
-      <div className={styles.mobileContent}>
+      <div className={styles.mobileContent} data-aos="fade-up">
         <Swiper
           spaceBetween={20}
           slidesPerView={1}
@@ -86,8 +86,8 @@ export function MarketingSection2() {
       </div>
 
       <div className={styles.footer}>
-        <p>고객은 나에게 유리한 병원을 선택하기 위해 다양한 단계를 거칩니다.</p>
-        <p>오늘의 브랜딩은 정확한 나즈 분석으로 우리 병원이 선택될 수밖에 없도록 설계합니다.</p>
+        <p data-aos="fade-up">고객은 나에게 유리한 병원을 선택하기 위해 다양한 단계를 거칩니다.</p>
+        <p data-aos="fade-up">오늘의 브랜딩은 정확한 나즈 분석으로 우리 병원이 선택될 수밖에 없도록 설계합니다.</p>
       </div>
     </section>
   );

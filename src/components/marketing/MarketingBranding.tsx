@@ -54,7 +54,7 @@ const scrollImages = [
 export function MarketingBranding() {
   return (
     <section className={styles.branding}>
-      <div className={styles.titleContainer}>
+      <div className={styles.titleContainer} data-aos="fade-up">
         <h3>그렇기 때문에, 오늘의 브랜딩</h3>
         <h2>오늘의 브랜딩은 접근 방식부터 다릅니다</h2>
       </div>
@@ -63,7 +63,7 @@ export function MarketingBranding() {
         {/* 데스크톱 뷰 */}
         <div className={styles.desktopCards}>
           {brandingData.map((item, index) => (
-            <div key={index} className={styles.card}>
+            <div key={index} className={styles.card} data-aos="fade-up" data-aos-delay={index * 200}>
               <h3>{item.title}</h3>
               <p>{item.description}</p>
             </div>
@@ -71,7 +71,7 @@ export function MarketingBranding() {
         </div>
 
         {/* 모바일 뷰 */}
-        <div className={styles.mobileCards}>
+        <div className={styles.mobileCards} data-aos="fade-up">
           <Swiper
             spaceBetween={20}
             slidesPerView={1}
@@ -93,13 +93,13 @@ export function MarketingBranding() {
         </div>
       </div>
 
-      <p className={styles.footer}>
+      <p className={styles.footer} data-aos="fade-up">
         잘 되는 병원을 더 잘 되게 만드는 건 쉽습니다.
         <br />
         하지만 저희는 마케팅에 실망한 원장님들께 제대로 된 마케팅 효과를 선물하고 싶습니다.
       </p>
 
-      <div className={styles.imageScroll}>
+      <div className={styles.imageScroll} data-aos="fade-up">
         <div className={styles.scrollTrack}>
           {[...scrollImages, ...scrollImages].map((image, index) => (
             <div key={index} className={styles.imageWrapper}>

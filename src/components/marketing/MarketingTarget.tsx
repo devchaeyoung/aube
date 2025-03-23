@@ -6,14 +6,14 @@ import styles from "./MarketingTarget.module.css";
 export function MarketingTarget() {
   return (
     <section className={styles.container}>
-      <div className={styles.titleSection}>
+      <div className={styles.titleSection} data-aos="fade-up">
         <h2 className={styles.mainTitle}>상위 노출 선점, 지금뿐입니다</h2>
         <h3 className={styles.subtitle}>동일 과목은 받지 않습니다</h3>
       </div>
 
       <div className={styles.darkSection}>
         <div className={styles.contentWrapper}>
-          <div className={styles.messageBox}>
+          <div className={styles.messageBox} data-aos="fade-up">
             <h3 className={styles.subTitle}>
               <strong style={{ color: "#62fde3" }}>오직 한 병원만을 위한 </strong>전략적인 마케팅
             </h3>
@@ -24,7 +24,7 @@ export function MarketingTarget() {
             </p>
           </div>
 
-          <div className={styles.pinImageContainer}>
+          <div className={styles.pinImageContainer} data-aos="fade-up">
             <div className={styles.speechBubble}>
               <div className={styles.alphabet}>
                 <Image src="/assets/Q.png" alt="알파벳 Q" width={63} height={50} />
@@ -54,24 +54,26 @@ export function MarketingTarget() {
         <div className={styles.compareWrapper}>
           <div className={styles.compareBox}>
             <div className={styles.compareItemWrapper}>
-              <div className={styles.compareItem}>
+              <div className={styles.compareItem} data-aos="fade-up">
                 <h2>A병원, B병원, C병원</h2>
                 <h3>모두 동일한 광고 진행</h3>
               </div>
-              <p className={styles.compareTitle} style={{ color: "#dbdbdb" }}>
+              <p className={styles.compareTitle} style={{ color: "#dbdbdb" }} data-aos="fade-up">
                 일반 마케팅 회사
               </p>
             </div>
             <div className={styles.compareItemWrapper}>
-              <div className={`${styles.compareItem} ${styles.highlight}`}>
+              <div className={`${styles.compareItem} ${styles.highlight}`} data-aos="fade-up">
                 <h2 style={{ color: "#fff" }}>단독 병원만을 위한</h2>
                 <h3 style={{ color: "#62fde3" }}>맞춤형 광고 전략 진행</h3>
               </div>
-              <p className={styles.compareTitle}>오늘의 브랜딩</p>
+              <p className={styles.compareTitle} data-aos="fade-up">
+                오늘의 브랜딩
+              </p>
             </div>
           </div>
 
-          <div className={styles.compareDescription}>
+          <div className={styles.compareDescription} data-aos="fade-up">
             <h3>
               <strong style={{ color: "#62fde3" }}>오직 한 병원만을 위한</strong> 차별화된 마케팅
             </h3>

@@ -6,14 +6,14 @@ import styles from "./MarketingProcess.module.css";
 export function MarketingProcess() {
   return (
     <section className={styles.container}>
-      <div className={styles.titleSection}>
+      <div className={styles.titleSection} data-aos="fade-up">
         <h2>A-Z 까지 필요한건 다 준비했습니다</h2>
         <h3 className={styles.subtitle}>원장님은 진료만 보세요</h3>
       </div>
 
       <div className={styles.contentSection}>
         <div className={styles.contentWrapper}>
-          <div className={styles.leftContent}>
+          <div className={styles.leftContent} data-aos="fade-right">
             <div className={styles.contentBox}>
               <div className={styles.imageBox}>
                 <div className={`${styles.imageWrapper} ${styles.alignLeft}`}>
@@ -52,7 +52,7 @@ export function MarketingProcess() {
             </div>
           </div>
 
-          <div className={styles.rightContent}>
+          <div className={styles.rightContent} data-aos="fade-left">
             <div className={styles.rightBox} style={{ marginTop: "2rem" }}>
               <h3 className={styles.mainTitle}>신뢰가 느껴지는 전문 지식 컬럼 포스팅</h3>
               <h2 className={styles.highlightTitle}>BLOG POSTING</h2>
@@ -64,7 +64,7 @@ export function MarketingProcess() {
           </div>
         </div>
       </div>
-      <div className={`${styles.processSection} ${styles.processSection2}`}>
+      <div className={`${styles.processSection} ${styles.processSection2}`} data-aos="fade-up">
         <div className={styles.processBox}>
           <div className={styles.processContent}>
             <div className={styles.processText}>
@@ -92,7 +92,7 @@ export function MarketingProcess() {
       </div>
       <div className={styles.contentSection}>
         <div className={`${styles.contentWrapper} ${styles.paddingContent}`}>
-          <div className={styles.leftContent}>
+          <div className={styles.leftContent} data-aos="fade-right">
             <div className={styles.contentBox}>
               <div className={styles.flexCenter}>
                 <div className={`${styles.imageWrapper2}`}>
@@ -108,7 +108,7 @@ export function MarketingProcess() {
             </div>
           </div>
 
-          <div className={styles.rightContent}>
+          <div className={styles.rightContent} data-aos="fade-left">
             <div className={styles.rightBox}>
               <h3 className={styles.mainTitle}>초진 환자 관리하는 예약부도 방지 시스템</h3>
               <h2 className={styles.highlightTitle}>SNS MARKETING</h2>
@@ -120,7 +120,7 @@ export function MarketingProcess() {
           </div>
         </div>
       </div>
-      <div className={styles.processSection}>
+      <div className={styles.processSection} data-aos="fade-up">
         <div className={styles.processBox}>
           <div className={styles.processContent}>
             <div className={styles.processText}>
@@ -148,7 +148,7 @@ export function MarketingProcess() {
       </div>
       <div className={styles.contentSection}>
         <div className={`${styles.contentWrapper}`}>
-          <div className={styles.leftContent}>
+          <div className={styles.leftContent} data-aos="fade-right">
             <div className={styles.contentBox}>
               <div className={styles.flexCenter}>
                 <div className={`${styles.imageWrapper2} ${styles.imageTransform2} ${styles.maxWidth}`}>
@@ -164,7 +164,7 @@ export function MarketingProcess() {
             </div>
           </div>
 
-          <div className={styles.rightContent}>
+          <div className={styles.rightContent} data-aos="fade-left">
             <div className={`${styles.rightBox} ${styles.textCenter}`}>
               <h3 className={styles.mainTitle}>초진 환자 관리하는 예약부도 방지 시스템</h3>
               <h2 className={styles.highlightTitle}>SNS MARKETING</h2>

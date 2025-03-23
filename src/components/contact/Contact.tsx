@@ -36,7 +36,7 @@ export function Contact() {
   return (
     <section className={styles.container}>
       <div className={styles.wrapper}>
-        <div className={styles.header}>
+        <div className={styles.header} data-aos="fade-up">
           <h2>죄송합니다. 현재 문의 연락이 많습니다.</h2>
           <h3>
             지역별 <strong style={{ color: "#62fde3" }}>선착순 단 1곳만 계약 가능</strong> 합니다.
@@ -44,7 +44,7 @@ export function Contact() {
         </div>
 
         <div className={styles.content}>
-          <div className={styles.left}>
+          <div className={styles.left} data-aos="fade-right">
             <div className={styles.contactInfo}>
               <div className={styles.infoItem}>
                 <h3>오늘의 브랜딩은</h3>
@@ -62,7 +62,7 @@ export function Contact() {
               </div>
             </div>
           </div>
-          <div className={styles.right}>
+          <div className={styles.right} data-aos="fade-left">
             <form onSubmit={handleSubmit} className={styles.form}>
               <div className={styles.formGroup}>
                 <label>

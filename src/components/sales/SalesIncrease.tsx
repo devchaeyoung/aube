@@ -2,6 +2,8 @@
 
 import styles from "./SalesIncrease.module.css";
 import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
+import { useInView } from "framer-motion";
 
 const salesData = [
   {
@@ -33,6 +35,7 @@ const salesData = [
     increase: "87",
   },
 ];
+
 const scrollImages = [
   {
     src: "/assets/scrollImages/scroll-image8.webp",
@@ -52,39 +55,77 @@ const scrollImages = [
   },
 ];
 
+function Counter({ value, isInView, type }: { value: string; isInView: boolean; type: "sales" | "percent" }) {
+  const [count, setCount] = useState(0);
+  const targetValue = parseInt(value.replace(/,/g, ""));
+
+  useEffect(() => {
+    if (isInView) {
+      let start = 0;
+      const step = Math.ceil(targetValue / 50);
+      const timer = setInterval(() => {
+        start += step;
+        if (start > targetValue) {
+          setCount(targetValue);
+          clearInterval(timer);
+        } else {
+          setCount(start);
+        }
+      }, 20);
+
+      return () => clearInterval(timer);
+    }
+  }, [isInView, targetValue]);
+
+  return <span>{type === "sales" ? count.toLocaleString() + "만원" : count + "%"}</span>;
+}
+
+function SalesCard({ item, index }: { item: (typeof salesData)[0]; index: number }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref, { once: true });
+
+  return (
+    <div ref={ref} className={styles.card} data-aos="fade-up" data-aos-delay={index * 200}>
+      <div className={styles.hospitalName}>
+        <span>{item.name}</span>
+      </div>
+      <div className={styles.salesInfo}>
+        <span className={styles.label}>월 매출</span>
+        <span className={styles.amount}>
+          <Counter value={item.initialSales} isInView={isInView} type="sales" />
+        </span>
+      </div>
+      <div className={styles.arrow} />
+
+      <div className={styles.peridBox}>
+        <div className={styles.period}>
+          <span>{item.period}</span>
+        </div>
+        <div className={styles.finalSales}>
+          <Counter value={item.finalSales} isInView={isInView} type="sales" />
+        </div>
+      </div>
+
+      <div className={styles.increase}>
+        <Counter value={item.increase} isInView={isInView} type="percent" />
+      </div>
+    </div>
+  );
+}
+
 export function SalesIncrease() {
+  const scrollRef = useRef<HTMLDivElement>(null);
+
   return (
     <>
       <section className={styles.salesIncrease}>
         <div className={styles.container}>
           {salesData.map((item, index) => (
-            <div key={index} className={styles.card}>
-              <div className={styles.hospitalName}>
-                <span>{item.name}</span>
-              </div>
-              <div className={styles.salesInfo}>
-                <span className={styles.label}>월 매출</span>
-                <span className={styles.amount}>{item.initialSales}만원</span>
-              </div>
-              <div className={styles.arrow} />
-
-              <div className={styles.peridBox}>
-                <div className={styles.period}>
-                  <span>{item.period}</span>
-                </div>
-                <div className={styles.finalSales}>
-                  <span>{item.finalSales}만원</span>
-                </div>
-              </div>
-
-              <div className={styles.increase}>
-                <span>{item.increase}%</span>
-              </div>
-            </div>
+            <SalesCard key={index} item={item} index={index} />
           ))}
         </div>
       </section>
-      <div className={styles.imageScroll}>
+      <div className={styles.imageScroll} data-aos="fade-up" ref={scrollRef}>
         <div className={styles.scrollTrack}>
           {[...scrollImages, ...scrollImages].map((image, index) => (
             <div key={index} className={styles.imageWrapper}>
