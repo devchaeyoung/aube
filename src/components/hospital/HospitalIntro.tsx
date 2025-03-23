@@ -7,11 +7,11 @@ import { Sign } from "./Sign";
 export function HospitalIntro() {
   return (
     <section className={styles.intro}>
-      <div className={styles.circleWrapper}>
+      <div className={styles.circleWrapper} data-aos="fade-right">
         <Image src="/assets/circle.png" alt="원" width={339} height={1100} />
       </div>
       <div className={styles.content}>
-        <div className={styles.questionBox}>
+        <div className={styles.questionBox} data-aos="fade-up">
           <div className={styles.imageWrapper}>
             <Image src="/assets/frame.png" alt="따옴표" width={180} height={140} />
           </div>
@@ -20,12 +20,12 @@ export function HospitalIntro() {
             가장 큰 고민이 무엇인가요?
           </h2>
           <div className={styles.answerBox}>
-            <p className={styles.answer}>
+            <p className={styles.answer} data-aos="fade-up" data-aos-delay="200">
               환자가 줄어들까 봐, 매출이 떨어질까 봐, 제대로 된 마케팅을 해야 하는데 방법을 몰라서...
               <br />
               하루에도 수십 번 고민하셨을 겁니다.
             </p>
-            <div className={styles.details}>
+            <div className={styles.details} data-aos="fade-up" data-aos-delay="400">
               <p>
                 <strong>물리치료사로 수많은 환자를 만나며</strong> 환자가 병원을 선택하는 이유를 알게 되었고,
               </p>
@@ -37,7 +37,7 @@ export function HospitalIntro() {
         </div>
 
         <div className={styles.wrapper}>
-          <div className={styles.highlightBox}>
+          <div className={styles.highlightBox} data-aos="fade-up" data-aos-delay="600">
             <h3>
               마케팅은 환자와 병원을 이어주는 <br />
               가장 중요한 다리입니다.
@@ -54,7 +54,7 @@ export function HospitalIntro() {
             </p>
           </div>
 
-          <div className={styles.pointsBox}>
+          <div className={styles.pointsBox} data-aos="fade-up" data-aos-delay="800">
             <div className={styles.point}>
               그냥 광고를 집행하는 것에서 끝나는 게 아니라,
               <strong>병원의 브랜드를 만들겠습니다.</strong>
@@ -69,7 +69,7 @@ export function HospitalIntro() {
           </div>
         </div>
 
-        <div className={styles.signature}>
+        <div className={styles.signature} data-aos="fade-up" data-aos-delay="1000">
           <Sign />
         </div>
       </div>
