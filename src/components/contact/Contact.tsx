@@ -18,11 +18,41 @@ export function Contact() {
     phone: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{ success: boolean; message: string } | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: 폼 제출 로직 구현
-    console.log(formData);
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setSubmitStatus({ success: true, message: data.message });
+        setFormData({
+          businessName: "",
+          name: "",
+          phone: "",
+          message: "",
+        });
+      } else {
+        setSubmitStatus({ success: false, message: data.message });
+      }
+    } catch {
+      setSubmitStatus({ success: false, message: "문의 전송 중 오류가 발생했습니다." });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -90,9 +120,14 @@ export function Contact() {
                 </label>
                 <textarea name="message" value={formData.message} onChange={handleChange} required />
               </div>
-              <button type="submit" className={styles.submitButton}>
-                문의하기
+              <button type="submit" className={styles.submitButton} disabled={isSubmitting}>
+                {isSubmitting ? "전송 중..." : "문의하기"}
               </button>
+              {submitStatus && (
+                <div className={`${styles.status} ${submitStatus.success ? styles.success : styles.error}`}>
+                  {submitStatus.message}
+                </div>
+              )}
             </form>
           </div>
         </div>
