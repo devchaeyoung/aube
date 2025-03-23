@@ -54,7 +54,7 @@ select {
 }
 
 /* iOS 자동완성 배경색 제거 */
-/* input:-webkit-autofill,
+input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 textarea:-webkit-autofill,
@@ -67,9 +67,9 @@ select:-webkit-autofill:focus {
   box-shadow: 0 0 0px 1000px #ffffff inset !important;
   -webkit-text-fill-color: inherit !important;
   transition: background-color 5000s ease-in-out 0s;
-} */
+}
 
-/* .swiper-pagination-bullet {
+.swiper-pagination-bullet {
   background: #62fde3 !important;
   opacity: 0.5;
 }
@@ -80,4 +80,8 @@ select:-webkit-autofill:focus {
 
 .swiper-pagination {
   bottom: 0 !important;
-} */
+}
+
+[data-aos] {
+  will-change: transform, opacity;
+}
