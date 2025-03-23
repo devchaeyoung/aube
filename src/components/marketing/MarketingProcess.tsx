@@ -75,7 +75,8 @@ export function MarketingProcess() {
                 <br />
                 고객의 선택에 가장 많은 비중을 차지하는 플레이스부터
                 <br />
-                인테리어 이미지까지, 오늘의 브랜딩은 신뢰감을 주는 첫인상을 만들어 드립니다.
+                인테리어 이미지까지,
+                <br /> 오늘의 브랜딩은 신뢰감을 주는 첫인상을 만들어 드립니다.
               </p>
             </div>
             <div className={`${styles.processImage}  ${styles.imageTransform}`}>
@@ -124,14 +125,15 @@ export function MarketingProcess() {
         <div className={styles.processBox}>
           <div className={styles.processContent}>
             <div className={styles.processText}>
-              <h3 className={styles.mainTitle}>재진율을 올려주는 컨텐츠 시스템</h3>
-              <h2 className={styles.highlightTitle}>PLACE MARKETING</h2>
+              <h3 className={styles.mainTitle}>제작 단계에서부터 마케팅을 염두한</h3>
+              <h2 className={styles.highlightTitle}>HOME PAGE DESIGN</h2>
+              <p></p>
               <p>
-                검색 시 보이는 이미지는 우리 병원의 첫인상입니다.
+                병원 이해도가 높은 의료인이 제작 하는 홈페이지는 다릅니다.
                 <br />
-                고객의 선택에 가장 많은 비중을 차지하는 플레이스부터
+                유지와 보수 걱정 없이 진료에만 집중할 수 있도록,
                 <br />
-                인테리어 이미지까지, 오늘의 브랜딩은 신뢰감을 주는 첫인상을 만들어 드립니다.
+                이제 오늘의 브랜딩이 도와드리겠습니다.
               </p>
             </div>
             <div className={`${styles.processImage} ${styles.maxWidth}`}>
@@ -166,11 +168,14 @@ export function MarketingProcess() {
 
           <div className={styles.rightContent} data-aos="fade-left">
             <div className={`${styles.rightBox} ${styles.textCenter}`}>
-              <h3 className={styles.mainTitle}>초진 환자 관리하는 예약부도 방지 시스템</h3>
-              <h2 className={styles.highlightTitle}>SNS MARKETING</h2>
+              <h3 className={styles.mainTitle}>깊은 인상을 남기는 브랜드 메세지 </h3>
+              <h2 className={styles.highlightTitle}>
+                PROMOTION
+                <br /> MATERIALS
+              </h2>
               <p>
-                다양한 컨텐츠를 꾸준하게 노출하여 초진 환자의 접근성을 높이는 시스템, 오늘의 브랜딩이 만드는 사이클
-                안에서 성장해보세요.
+                단순 정보 전달을 넘어 스토리텔링과 브랜드 메시지를 강조하여
+                <br /> 방문자들에게 깊은 인상을 전달해보세요.
               </p>
             </div>
           </div>

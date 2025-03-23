@@ -23,12 +23,12 @@ export function Footer() {
           <div className={styles.infoGroup}>
             <span>오늘의브랜딩</span>
             <span className={styles.divider}>|</span>
-            <span>대표 : 이동혁</span>
+            <span>대표 : 안준성</span>
             <span className={styles.divider}>|</span>
             <span>사업자등록번호 : 225-50-00846</span>
           </div>
           <div className={styles.infoGroup}>
-            <span>주소 : 서울 금천구 가산디지털2로 70 대륭테크노타운19 611호</span>
+            <span>주소 : 서울 금천구 가산디지털2로 70 대륭테크노타운19차 611호</span>
           </div>
           <div className={styles.infoGroup}>
             <span>TEL : 010-3018-1144</span>

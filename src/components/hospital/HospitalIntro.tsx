@@ -38,7 +38,7 @@ export function HospitalIntro() {
 
         <div className={styles.wrapper}>
           <div className={styles.highlightBox} data-aos="fade-up" data-aos-delay="600">
-            <h3>
+            <h3 className={styles.highlightTitle}>
               마케팅은 환자와 병원을 이어주는 <br />
               가장 중요한 다리입니다.
             </h3>
