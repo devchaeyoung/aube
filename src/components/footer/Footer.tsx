@@ -1,12 +1,10 @@
-"use client";
-
 import Link from "next/link";
 import styles from "./Footer.module.css";
 
 export function Footer() {
   return (
     <footer className={styles.footer}>
-      <div className={styles.wrapper}>
+      <div className={styles.wrapper} data-aos="fade-up" data-aos-duration="1000">
         <div className={styles.header}>
           <h2>고객의 모든 과정 끝에 당신의 병원이 있도록</h2>
           <h3>오늘의 브랜딩</h3>
@@ -20,7 +18,7 @@ export function Footer() {
           </svg>
         </div>
       </div>
-      <div className={styles.container}>
+      <div className={styles.container} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
         <div className={styles.companyInfo}>
           <div className={styles.infoGroup}>
             <span>오늘의브랜딩</span>
