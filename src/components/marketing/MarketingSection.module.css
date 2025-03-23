@@ -114,7 +114,11 @@
   margin-top: 120px;
   margin-bottom: 60px;
 }
-
+.polygon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .groupImage {
   max-width: var(--max-width);
   width: 100%;

@@ -64,6 +64,14 @@ export function MarketingSection() {
           </p>
         </motion.div>
 
+        <div className={styles.polygon}>
+          <svg width="68" height="54" viewBox="0 0 68 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M42.0737 49.0971C38.079 54.5632 29.921 54.5632 25.9263 49.0971L2.31914 16.795C-2.50949 10.1879 2.20935 0.894532 10.3929 0.894532L57.6072 0.894537C65.7907 0.894537 70.5095 10.1879 65.6809 16.795L42.0737 49.0971Z"
+              fill="#62FDE3"
+            />
+          </svg>
+        </div>
         <motion.div
           className={styles.highlightCard}
           initial={{ opacity: 0, y: 20 }}
