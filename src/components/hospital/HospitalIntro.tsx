@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import styles from "./HospitalIntro.module.css";
+import { Sign } from "./Sign";
 
 export function HospitalIntro() {
   return (
@@ -69,8 +70,7 @@ export function HospitalIntro() {
         </div>
 
         <div className={styles.signature}>
-          <span>대표</span>
-          <span className={styles.name}>안준성</span>
+          <Sign />
         </div>
       </div>
     </section>

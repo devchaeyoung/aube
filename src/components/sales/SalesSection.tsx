@@ -23,13 +23,16 @@ export function SalesSection() {
 
           <div className={styles.circleContainer}>
             <div className={styles.circle}>
-              <p>노출 ≠ 매출</p>
+              <div className={styles.innerCircle}>
+                <p>노출 ≠ 매출</p>
+              </div>
             </div>
             <div className={`${styles.circle} ${styles.highlight}`}>
-              <div>
-                <p>노출 × 전환율</p>
-                <p className={styles.result}>매출</p>
+              <div className={styles.innerCircle}>
+                <p className={styles.colorBlack}>노출 × 전환율</p>
+                <strong className={`${styles.colorBlack} ${styles.result}`}>매출</strong>
               </div>
+              <div className={styles.highlightInnerCircle}></div>
             </div>
           </div>
         </div>

@@ -121,6 +121,11 @@
   display: none;
 }
 
+.signSvg {
+  width: 182px;
+  height: auto;
+}
+
 @media (max-width: 768px) {
   .circleWrapper {
     display: none;
@@ -162,5 +167,9 @@
   }
   .questionBox {
     margin-bottom: 10rem;
+  }
+
+  .signSvg {
+    width: 120px;
   }
 }

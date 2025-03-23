@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "오늘의브랜딩은 의료 산업의 특수성을 고려하여 환자와 의료진에게 신뢰받는 맞춤형 브랜딩 솔루션을 제공하는 전문 기업입니다.",
   keywords: "병원마케팅, 의료마케팅, 병원브랜딩, SNS마케팅, 플레이스마케팅, 예약부도방지, 초진환자관리, 재진율관리",
-  authors: [{ name: "이동혁" }],
+  authors: [{ name: "안준성" }],
   creator: "오늘의브랜딩",
   publisher: "오늘의브랜딩",
   formatDetection: {
