@@ -11,7 +11,7 @@ import { BrandingSection } from "@/components/branding/BrandingSection";
 // import { MarketingTarget } from "@/components/marketing/MarketingTarget";
 // import { Contact } from "@/components/contact/Contact";
 import { Footer } from "@/components/footer/Footer";
-import AosInit from "@/components/AosInit";
+// import AosInit from "@/components/AosInit";
 export default function Home() {
   return (
     <>
