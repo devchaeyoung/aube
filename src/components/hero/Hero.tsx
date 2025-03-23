@@ -21,7 +21,7 @@ export function Hero() {
             <span className={styles.brandName}>AUBE</span>
           </h1>
           <p className={styles.description} data-aos="fade-up" data-aos-delay="400">
-            오늘날 의료 산업의 특수성을 고려하여
+            오브는 의료 산업의 특수성을 고려하여
             <br />
             환자와 의료진에게 신뢰받는 맞춤형 브랜딩 솔루션을 제공하는 전문 기업입니다.
           </p>
