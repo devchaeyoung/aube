@@ -49,10 +49,11 @@ export function BrandingSection() {
             spaceBetween={20}
             slidesPerView={1}
             centeredSlides={true}
-            loop={true}
+            loop={false}
             pagination={{ clickable: true }}
             modules={[Pagination]}
             className={styles.swiper}
+            initialSlide={0}
           >
             {brandingData.map((item, index) => (
               <SwiperSlide key={index}>

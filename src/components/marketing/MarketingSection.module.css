@@ -2,7 +2,7 @@
   background: #111;
   padding: 100px 20px;
   color: #fff;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .titleContainer {

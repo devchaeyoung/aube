@@ -63,7 +63,7 @@ export function MarketingSection2() {
           spaceBetween={20}
           slidesPerView={1}
           centeredSlides={true}
-          loop={true}
+          loop={false}
           pagination={{ clickable: true }}
           modules={[Pagination]}
           className={styles.swiper}

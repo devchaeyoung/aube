@@ -2,7 +2,7 @@
   background: #000;
   color: #fff;
   padding: 100px 20px;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .header {
