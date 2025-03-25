@@ -12,7 +12,7 @@
   left: 24px;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: -1;
 }
 .content {
   max-width: var(--max-width);
@@ -49,17 +49,22 @@
 }
 
 .highlightBox strong {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
 }
-.defail string {
-  font-size: 1.4rem;
+
+.highlightText {
+  font-size: 1.6rem;
 }
 .details p {
   color: #fff;
-
   font-size: 1.4rem;
   line-height: 1.2;
   margin-bottom: 1rem;
+}
+
+.details strong {
+  font-size: 1.6rem;
 }
 
 .highlightBox {
@@ -95,13 +100,13 @@
   border-radius: 8px;
   color: #fff;
   background: rgba(76, 166, 133, 0.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #62fde3;
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   word-break: keep-all;
+}
+.point br {
+  display: none;
 }
 
 .signature {
@@ -141,7 +146,7 @@
   }
 
   .highlightBox h3 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   .questionBox {
     padding-left: 0;
@@ -155,6 +160,9 @@
     font-size: 0.9rem;
     display: block;
   }
+  .point br {
+    display: block;
+  }
   .answerBox {
     margin-left: 0;
   }
@@ -164,6 +172,13 @@
   .highlightBox h3 {
     text-align: center;
     margin-bottom: 4rem;
+  }
+  .highlightText strong {
+    font-size: 1.1rem;
+  }
+  .highlightBox p {
+    font-size: 1.1rem;
+    line-height: 1.5;
   }
   .questionBox {
     margin-bottom: 10rem;
