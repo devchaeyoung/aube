@@ -10,19 +10,6 @@
   padding: 6rem 2rem;
 }
 
-.mainTitle {
-  font-size: 2.2rem;
-  font-weight: 300;
-  color: #fff;
-}
-
-.subtitle {
-  font-size: 2.6rem;
-  font-weight: bold;
-  line-height: 1.8;
-  color: #fff;
-}
-
 .contentWrapper {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -361,10 +348,6 @@
     padding-top: 10rem;
   }
 
-  .titleSection h2 {
-    font-size: 2rem;
-  }
-
   .pinImage img .subtitle {
     font-size: 1.8rem;
   }
@@ -450,24 +433,12 @@
 }
 
 @media (max-width: 480px) {
-  .titleSection h2 {
-    font-size: 1.8rem;
-  }
-
-  .subtitle {
-    font-size: 1.5rem;
-  }
-
   .message {
     padding: 1rem 1.5rem;
   }
 
   .message p {
     font-size: 1rem;
-  }
-
-  .subTitle {
-    font-size: 1.5rem;
   }
 
   .description {

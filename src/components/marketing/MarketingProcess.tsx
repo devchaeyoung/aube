@@ -2,13 +2,12 @@
 
 import Image from "next/image";
 import styles from "./MarketingProcess.module.css";
-
+import TitleHeader from "../common/Title";
 export function MarketingProcess() {
   return (
     <section className={styles.container}>
       <div className={styles.titleSection} data-aos="fade-up">
-        <h2>A-Z 까지 필요한건 다 준비했습니다</h2>
-        <h3 className={styles.subtitle}>원장님은 진료만 보세요</h3>
+        <TitleHeader title="A-Z 까지 필요한건 다 준비했습니다" subTitle="원장님은 진료만 보세요" />
       </div>
 
       <div className={styles.contentSection}>

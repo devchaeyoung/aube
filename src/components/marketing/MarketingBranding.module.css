@@ -12,19 +12,6 @@
   padding: 0 2rem;
 }
 
-.titleContainer h3 {
-  color: #fff;
-  font-size: 2.5rem;
-  font-weight: 300;
-  margin-bottom: 1rem;
-}
-
-.titleContainer h2 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-}
-
 .cardContainer {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -117,12 +104,7 @@
     font-size: 1.2rem;
     margin-bottom: 6rem;
   }
-  .titleContainer h2 {
-    font-size: 1.6rem;
-  }
-  .titleContainer h3 {
-    font-size: 1.4rem;
-  }
+
   .desktopCards {
     display: none;
   }

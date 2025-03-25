@@ -5,7 +5,7 @@ import { Pagination } from "swiper/modules";
 import styles from "./BrandingSection.module.css";
 import "swiper/css";
 import "swiper/css/pagination";
-
+import TitleHeader from "../common/Title";
 const brandingData = [
   {
     title: "더 잘합니다",
@@ -25,10 +25,10 @@ const brandingData = [
 export function BrandingSection() {
   return (
     <section className={styles.branding}>
-      <h2 className={styles.title}>오늘의 브랜딩은</h2>
-      <div className={styles.title2Wrapper}>
-        <h2 className={styles.title2}>[ AUBE] 합니다</h2>
+      <div className={styles.titleContainer}>
+        <TitleHeader title="오늘의 브랜딩은" subTitle="[ AUBE] 합니다" />
       </div>
+
       <div className={styles.cardContainer}>
         {/* 데스크톱 뷰 */}
         <div className={styles.desktopCards}>

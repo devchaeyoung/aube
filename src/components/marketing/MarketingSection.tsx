@@ -2,15 +2,13 @@
 
 import styles from "./MarketingSection.module.css";
 import Image from "next/image";
-
+import TitleHeader from "../common/Title";
 export function MarketingSection() {
   return (
     <section className={styles.marketing}>
       <div className={styles.titleContainer} data-aos="fade-up">
-        <h2>그거 아세요?</h2>
-        <h3>병원 마케팅, 끝난 뒤가 진짜 시작입니다</h3>
+        <TitleHeader title="그거 아세요?" subTitle="병원 마케팅, 끝난 뒤가 진짜 시작입니다" />
       </div>
-
       <div className={styles.cardContainer}>
         <div className={styles.card} data-aos="fade-up">
           <div className={styles.cardHeader}>

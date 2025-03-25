@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 import { Counter } from "./SalesIncrease";
+import TitleHeader from "../common/Title";
 
 export function SalesGrowth() {
   const ref = useRef<HTMLDivElement>(null);
@@ -12,9 +13,8 @@ export function SalesGrowth() {
 
   return (
     <section className={styles.salesGrowth}>
-      <div className={styles.header} data-aos="fade-up">
-        <h2>오늘의 브랜딩이 약속합니다</h2>
-        <h3>매출 상승</h3>
+      <div className={styles.titleContainer} data-aos="fade-up">
+        <TitleHeader title="오늘의 브랜딩이 약속합니다" subTitle="매출 상승" />
       </div>
 
       <div className={styles.container}>

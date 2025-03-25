@@ -12,15 +12,6 @@
   line-height: 1.4;
 }
 
-.titleContainer h2 {
-  font-size: 2.5rem;
-  font-weight: 300;
-}
-.titleContainer h3 {
-  font-size: 3rem;
-  font-weight: 700;
-}
-
 .cardContainer {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -132,13 +123,6 @@
     grid-template-columns: 1fr;
   }
 
-  .titleContainer h2 {
-    font-size: 1.4rem;
-  }
-  .titleContainer h3 {
-    font-size: 1.6rem;
-    word-break: keep-all;
-  }
   .card {
     padding: 0;
     padding-top: 48px;

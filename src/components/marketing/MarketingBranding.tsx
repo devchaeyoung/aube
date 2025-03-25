@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import styles from "./MarketingBranding.module.css";
-
+import TitleHeader from "../common/Title";
 const brandingData = [
   {
     title: "N포털 상위노출",
@@ -55,8 +55,7 @@ export function MarketingBranding() {
   return (
     <section className={styles.branding}>
       <div className={styles.titleContainer} data-aos="fade-up">
-        <h3>그렇기 때문에, 오늘의 브랜딩</h3>
-        <h2>오늘의 브랜딩은 접근 방식부터 다릅니다</h2>
+        <TitleHeader title="그렇기 때문에, 오늘의 브랜딩" subTitle="오늘의 브랜딩은 접근 방식부터 다릅니다" />
       </div>
 
       <div className={styles.cardContainer}>

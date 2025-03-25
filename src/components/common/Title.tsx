@@ -1,7 +1,14 @@
-export function Title({ children }: { children: React.ReactNode }) {
-  return <h2>{children}</h2>;
-}
+import styles from "./Title.module.css";
 
-export function SubTitle({ children }: { children: React.ReactNode }) {
-  return <h3>{children}</h3>;
+interface TitleHeaderProps {
+  title: string;
+  subTitle: string;
+}
+export default function TitleHeader({ title, subTitle }: TitleHeaderProps) {
+  return (
+    <div className={styles.titleContainer}>
+      <h2 className={styles.title}>{title}</h2>
+      <h3 className={styles.subTitle}>{subTitle}</h3>
+    </div>
+  );
 }

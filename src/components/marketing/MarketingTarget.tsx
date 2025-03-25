@@ -2,13 +2,12 @@
 
 import Image from "next/image";
 import styles from "./MarketingTarget.module.css";
-
+import TitleHeader from "../common/Title";
 export function MarketingTarget() {
   return (
     <section className={styles.container}>
       <div className={styles.titleSection} data-aos="fade-up">
-        <h2 className={styles.mainTitle}>상위 노출 선점, 지금뿐입니다</h2>
-        <h3 className={styles.subtitle}>동일 과목은 받지 않습니다</h3>
+        <TitleHeader title="상위 노출 선점, 지금뿐입니다" subTitle="동일 과목은 받지 않습니다" />
       </div>
 
       <div className={styles.darkSection}>

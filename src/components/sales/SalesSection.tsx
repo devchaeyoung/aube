@@ -1,13 +1,12 @@
 "use client";
 import styles from "./SalesSection.module.css";
-
+import TitleHeader from "../common/Title";
 export function SalesSection() {
   return (
     <section className={styles.sales}>
       <div className={styles.content}>
-        <div className={styles.title} data-aos="fade-up">
-          <h2>마케팅, 이미 해봤는데</h2>
-          <h3>매출은 그대로이신가요?</h3>
+        <div className={styles.titleContainer} data-aos="fade-up">
+          <TitleHeader title="마케팅, 이미 해봤는데" subTitle="매출은 그대로이신가요?" />
         </div>
 
         <div className={styles.contentBox}>
