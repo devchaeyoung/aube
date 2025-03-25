@@ -18,7 +18,7 @@ export function MarketingProcess() {
               <div className={styles.imageBox}>
                 <div className={`${styles.imageWrapper} ${styles.alignLeft}`}>
                   <Image
-                    src="/assets/marketingProcess/image1.png"
+                    src="/assets/marketingProcess/image1.gif"
                     alt="일반적인 정보 전달형 블로그 포스팅 예시"
                     width={280}
                     height={220}
@@ -35,7 +35,7 @@ export function MarketingProcess() {
               <div className={`${styles.imageBox} ${styles.largeImage}`}>
                 <div className={`${styles.imageWrapper} ${styles.alignRight}`}>
                   <Image
-                    src="/assets/marketingProcess/image2.png"
+                    src="/assets/marketingProcess/image2.gif"
                     alt="전문지식이 접목된 칼럼형 블로그 포스팅 예시"
                     width={380}
                     height={260}
@@ -138,7 +138,7 @@ export function MarketingProcess() {
             </div>
             <div className={`${styles.processImage} ${styles.maxWidth}`}>
               <Image
-                src="/assets/marketingProcess/image4.png"
+                src="/assets/marketingProcess/image4.gif"
                 alt="병원 마케팅 컨텐츠 시스템 대시보드"
                 width={500}
                 height={400}
