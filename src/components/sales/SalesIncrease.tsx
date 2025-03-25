@@ -55,7 +55,7 @@ const scrollImages = [
   },
 ];
 
-function Counter({ value, isInView, type }: { value: string; isInView: boolean; type: "sales" | "percent" }) {
+export function Counter({ value, isInView, type }: { value: string; isInView: boolean; type: "sales" | "percent" }) {
   const [count, setCount] = useState(0);
   const targetValue = parseInt(value.replace(/,/g, ""));
 
@@ -82,7 +82,7 @@ function Counter({ value, isInView, type }: { value: string; isInView: boolean; 
 
 function SalesCard({ item, index }: { item: (typeof salesData)[0]; index: number }) {
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: false });
 
   return (
     <div ref={ref} className={styles.card} data-aos="fade-up" data-aos-delay={index * 200}>

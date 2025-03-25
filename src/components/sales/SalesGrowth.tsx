@@ -2,8 +2,14 @@
 
 import styles from "./SalesGrowth.module.css";
 import Image from "next/image";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
+import { Counter } from "./SalesIncrease";
 
 export function SalesGrowth() {
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref, { once: false });
+
   return (
     <section className={styles.salesGrowth}>
       <div className={styles.header} data-aos="fade-up">
@@ -13,8 +19,11 @@ export function SalesGrowth() {
 
       <div className={styles.container}>
         <div className={styles.content} data-aos="fade-right">
-          <div className={styles.highlight}>
-            <h4>신규 개원 병원 3개월 만에 200% 달성</h4>
+          <div className={styles.highlight} ref={ref}>
+            <h4>
+              신규 개원 병원 3개월 만에 <Counter value="200" isInView={isInView} type="percent" />
+              달성
+            </h4>
             <p>고객 수치를 분석하여 매출증대 방법을 제안합니다.</p>
           </div>
         </div>
