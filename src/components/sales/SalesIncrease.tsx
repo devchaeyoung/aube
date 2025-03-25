@@ -95,8 +95,9 @@ function SalesCard({ item, index }: { item: (typeof salesData)[0]; index: number
           <Counter value={item.initialSales} isInView={isInView} type="sales" />
         </span>
       </div>
-      <div className={styles.arrow} />
-
+      <div className={styles.arrow}>
+        <Image src="/assets/arrow.png" alt="화살표" width={40} height={40} />
+      </div>
       <div className={styles.peridBox}>
         <div className={styles.period}>
           <span>{item.period}</span>
