@@ -10,19 +10,19 @@ const marketingData = [
     title: "관심 영역",
     description: "병원을 내원하기 전에 99%의 고객은 검색을 통해 정보를 수집합니다.",
     image: "/assets/marketingSection/image1.webp",
-    highlight: "첫 페이지에 우리 병원이 보이도록, 방문하는 고객의 수 증가",
+    highlight: "첫 페이지에 우리 병원이 보이도록,<br/>방문하는 고객의 수 증가",
   },
   {
     title: "비교 영역",
     description: "나에게 유리한 병원은 어디지 선택 기준을 정하여 수집된 정보를 비교합니다.",
     image: "/assets/marketingSection/image2.webp",
-    highlight: "전문적인 정보성 포스팅과 신뢰감이 드는 디자인으로 확신",
+    highlight: "전문적인 정보성 포스팅과<br/>신뢰감이 드는 디자인으로 확신",
   },
   {
     title: "행동 영역",
     description: "최종 선택한 병원을 방문합니다.",
     image: "/assets/marketingSection/image3.webp",
-    highlight: "마지막까지 고객을 놓치지 않도록, 편리한 예약시스템 마련",
+    highlight: "마지막까지 고객을 놓치지 않도록,<br/>편리한 예약시스템 마련",
   },
 ];
 
@@ -52,7 +52,7 @@ export function MarketingSection2() {
             <div className={styles.imageWrapper}>
               <Image src={item.image} alt={item.title} width={300} height={300} />
             </div>
-            <p className={styles.highlight}>{item.highlight}</p>
+            <p className={styles.highlight} dangerouslySetInnerHTML={{ __html: item.highlight }} />
           </div>
         ))}
       </div>
@@ -78,7 +78,7 @@ export function MarketingSection2() {
                 <div className={styles.imageWrapper}>
                   <Image src={item.image} alt={item.title} width={300} height={300} />
                 </div>
-                <p className={styles.highlight}>{item.highlight}</p>
+                <p className={styles.highlight} dangerouslySetInnerHTML={{ __html: item.highlight }} />
               </div>
             </SwiperSlide>
           ))}

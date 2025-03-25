@@ -15,7 +15,7 @@ export function SalesSection() {
             <p>
               많은 업체에서 상위 노출만을 강조합니다.
               <br />
-              하지만 <strong>중요한 것은 결국 매출</strong>입니다.
+              하지만 <strong>중요한 것은 결국 매출.</strong>
               <br />
               <strong>우리 병원을 선택하고 싶게끔 만드는 것이 핵심입니다.</strong>
             </p>

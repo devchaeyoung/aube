@@ -15,7 +15,7 @@
 .title2 {
   text-align: center;
   line-height: 1.4;
-  font-size: 2.8rem;
+  font-size: 3rem;
   font-weight: 400;
   margin-bottom: 60px;
   font-weight: 700;
@@ -53,9 +53,10 @@
 }
 
 .card h3 {
-  font-size: 2.6rem;
+  font-size: 3rem;
   color: #fff;
   margin-top: 4rem;
+  font-weight: 700;
 }
 
 .divider {
@@ -83,7 +84,10 @@
   }
 
   .title {
-    font-size: 2rem;
+    font-size: 1.4rem;
+  }
+  .title2 {
+    font-size: 1.8rem;
   }
 
   .card h3 {
@@ -98,7 +102,7 @@
     padding: 2rem;
   }
   .divider {
-    margin-top: 10rem;
+    margin-top: 14rem;
     margin-bottom: 2rem;
   }
 }
