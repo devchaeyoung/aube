@@ -8,14 +8,14 @@
 .title {
   text-align: center;
   line-height: 1.4;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   font-weight: 400;
 }
 
 .title2 {
   text-align: center;
   line-height: 1.4;
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   font-weight: 400;
   margin-bottom: 60px;
   font-weight: 700;
@@ -44,7 +44,7 @@
   background-image: url("/background/figure.png");
   background-size: cover;
   background-position: center;
-  border-radius: 20px;
+  border-radius: 50px;
   padding: 4rem;
   height: 600px;
   display: flex;
@@ -94,6 +94,7 @@
     font-size: 1.3rem;
   }
   .card {
+    border-radius: 28px;
     padding: 2rem;
   }
   .divider {

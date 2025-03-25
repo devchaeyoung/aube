@@ -26,3 +26,9 @@ components/
 ├── SalesGrowth.module.css
 ├── SalesIncrease.tsx
 └── SalesIncrease.module.css
+
+# 폰트 사이즈
+
+/_ 48px 2.8rem _/
+/_ 40px 2.6rem _/
+/_ 24px 1.8rem _/
