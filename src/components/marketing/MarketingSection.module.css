@@ -13,12 +13,12 @@
 }
 
 .titleContainer h2 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   font-weight: 300;
 }
 .titleContainer h3 {
-  font-size: 2.6rem;
-  font-weight: bold;
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 .cardContainer {
@@ -133,11 +133,11 @@
   }
 
   .titleContainer h2 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   .titleContainer h3 {
-    font-size: 1.8rem;
-    font-weight: bold;
+    font-size: 1.6rem;
+    word-break: keep-all;
   }
   .card {
     padding: 0;
