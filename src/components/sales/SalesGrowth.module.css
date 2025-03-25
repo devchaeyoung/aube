@@ -14,14 +14,14 @@
 
 .header h2 {
   color: #fff;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   margin-bottom: 0.5rem;
   font-weight: 300;
 }
 
 .header h3 {
-  font-size: 2.6rem;
-  font-weight: bold;
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 .container {
@@ -109,10 +109,10 @@
   }
 
   .header h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .header h2 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   .highlight {
     text-align: center;
@@ -120,10 +120,14 @@
   }
 
   .highlight h4 {
-    font-size: 1.3rem;
+    font-size: 14px;
+  }
+
+  .highlight p {
+    font-size: 14px;
   }
 
   .details {
-    font-size: 0.9rem;
+    font-size: 12px;
   }
 }

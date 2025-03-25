@@ -44,6 +44,7 @@
 .amount {
   color: #fff;
   font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .arrow {
@@ -61,12 +62,12 @@
 .period {
   color: #fff;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .finalSales {
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: 500;
   min-width: 140px;
 }
 
@@ -136,7 +137,8 @@
 
   .label,
   .amount {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
+    text-align: left;
   }
 
   .period {
