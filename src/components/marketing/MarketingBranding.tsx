@@ -8,15 +8,15 @@ import TitleHeader from "../common/Title";
 const brandingData = [
   {
     title: "N포털 상위노출",
-    description: "'oo 역 정형외과', 'oo 역 안과' 노출의 양에 따라 찾아오는 고객의 수가 확연하게 차이 납니다.",
+    description: "'oo 역 정형외과', 'oo 역 안과'<br/>노출의 양에 따라찾아오는 고객의<br/>수가 확연하게 차이 납니다.",
   },
   {
     title: "블로그 포스팅의 힘",
-    description: "전문적인 정보성 포스팅으로 환자들에게 우리 병원의 신뢰도를 높이고, 친근한 접근이 가능하게 합니다.",
+    description: "전문적인 정보성 포스팅으로<br/>환자들에게 우리 병원의 신뢰도를 높이고,<br/>친근한 접근이 가능하게 합니다.",
   },
   {
     title: "눈길이 가는 디자인",
-    description: "결국엔 우리 병원이 선택되도록, 가독성은 높이고 호감 가는 디자인을 진행합니다.",
+    description: "결국엔 우리 병원이 선택되도록,<br/>가독성은 높이고<br/>호감 가는 디자인을 진행합니다.",
   },
 ];
 
@@ -63,8 +63,10 @@ export function MarketingBranding() {
         <div className={styles.desktopCards}>
           {brandingData.map((item, index) => (
             <div key={index} className={styles.card} data-aos="fade-up" data-aos-delay={index * 200}>
+
               <h3>{item.title}</h3>
-              <p>{item.description}</p>
+              <p dangerouslySetInnerHTML={{ __html: item.description }} />
+
             </div>
           ))}
         </div>
@@ -82,9 +84,11 @@ export function MarketingBranding() {
           >
             {brandingData.map((item, index) => (
               <SwiperSlide key={index}>
-                <div className={styles.card}>
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
+                <div className={styles.mobileCardWrapper}>
+                  <div className={styles.card}>
+                    <h3>{item.title}</h3>
+                    <p dangerouslySetInnerHTML={{ __html: item.description }} />
+                  </div>
                 </div>
               </SwiperSlide>
             ))}

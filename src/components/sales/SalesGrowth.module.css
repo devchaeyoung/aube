@@ -42,10 +42,40 @@
 }
 
 .graph {
+  display: block;
   flex: 1;
   position: relative;
   margin-top: 4rem;
 }
+
+.arrowWrapper {
+  width:160px;
+  height: 180px;
+  position: absolute;
+  right: 8rem;
+  top: 1.2rem;
+}
+.arrowRelative{
+  position: relative;
+  height: 100%;
+}
+.arrowImageWrapper{
+  position: absolute;
+  top:0;
+  left:0;
+}
+.arrowText{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  z-index: 10;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+
 
 .graphImage {
   width: 100%;
@@ -57,7 +87,7 @@
   max-width: var(--max-width);
   margin: 0 auto;
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   line-height: 1.6;
   text-align: left;
 }
@@ -89,6 +119,18 @@
   font-size: 1.5rem;
   color: #4fffb0;
 }
+.mobileGraph {
+  display: none;
+}
+
+@media (max-width:1024px){
+  .graph {
+    display: none;
+  }
+  .mobileGraph {
+    display: block;
+  }
+}
 
 @media (max-width: 768px) {
   .container {
@@ -111,5 +153,11 @@
 
   .details {
     font-size: 12px;
+  }
+  .graph {
+    display: none;
+  }
+  .mobileGraph {
+    display: block;
   }
 }

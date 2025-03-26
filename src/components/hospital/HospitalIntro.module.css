@@ -163,6 +163,22 @@
   .point br {
     display: block;
   }
+  .answer,.details{
+    font-size: 1.1rem;
+
+  }
+
+  .details strong{
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .details p{
+    font-size: 1.1rem;
+    margin-bottom:0;
+    line-height: 1.8;
+
+  }
+
   .answerBox {
     margin-left: 0;
   }

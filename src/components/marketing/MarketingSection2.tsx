@@ -8,21 +8,27 @@ import styles from "./MarketingSection2.module.css";
 const marketingData = [
   {
     title: "관심 영역",
-    description: "병원을 내원하기 전에 99%의 고객은 검색을 통해 정보를 수집합니다.",
+    description: "병원을 내원하기 전에 99%의 고객은<br/>검색을 통해 정보를 수집합니다.",
     image: "/assets/marketingSection/image1.webp",
     highlight: "첫 페이지에 우리 병원이 보이도록,<br/>방문하는 고객의 수 증가",
+    imgWidth: 300,
+    imgHeight: 200,
   },
   {
     title: "비교 영역",
-    description: "나에게 유리한 병원은 어디지 선택 기준을 정하여 수집된 정보를 비교합니다.",
-    image: "/assets/marketingSection/image2.webp",
+    description: "나에게 유리한 병원은 어디지 선택 기준을<br/>정하여 수집된 정보를 비교합니다.",
+    image: "/assets/marketingSection/image2.png",
     highlight: "전문적인 정보성 포스팅과<br/>신뢰감이 드는 디자인으로 확신",
+    imgWidth: 600,
+    imgHeight: 200,
   },
   {
     title: "행동 영역",
-    description: "최종 선택한 병원을 방문합니다.",
+    description: "최종 선택한 병원을 방문합니다.<br/>",
     image: "/assets/marketingSection/image3.webp",
     highlight: "마지막까지 고객을 놓치지 않도록,<br/>편리한 예약시스템 마련",
+    imgWidth: 120,
+    imgHeight: 200,
   },
 ];
 
@@ -35,7 +41,7 @@ export function MarketingSection2() {
         <p data-aos="fade-up">
           서로가 1등이라고 하는데 막상 어떤 기준으로 골라야 할지 고민되시죠?
           <br />
-          <strong>지금은 &apos;의료 쇼핑 시대&apos;</strong>
+          지금은 <strong>&apos;의료 쇼핑 시대&apos;</strong>
           <br />
           고객이 어떻게 이동하는지 파악할 줄 아는 마케팅 업체를 선택하셔야 합니다.
         </p>
@@ -47,10 +53,10 @@ export function MarketingSection2() {
           <div key={index} className={styles.card} data-aos="fade-up" data-aos-delay={index * 200}>
             <div className={styles.cardHeader}>
               <h4>{item.title}</h4>
-              <p>{item.description}</p>
+                <p dangerouslySetInnerHTML={{__html: item.description}}/>
             </div>
             <div className={styles.imageWrapper}>
-              <Image src={item.image} alt={item.title} width={300} height={300} />
+              <Image src={item.image} alt={item.title} width={item.imgWidth} height={item.imgHeight} />
             </div>
             <p className={styles.highlight} dangerouslySetInnerHTML={{ __html: item.highlight }} />
           </div>
@@ -73,7 +79,7 @@ export function MarketingSection2() {
               <div className={styles.card}>
                 <div className={styles.cardHeader}>
                   <h4>{item.title}</h4>
-                  <p>{item.description}</p>
+                  <p dangerouslySetInnerHTML={{ __html: item.description }}/>
                 </div>
                 <div className={styles.imageWrapper}>
                   <Image src={item.image} alt={item.title} width={300} height={300} />

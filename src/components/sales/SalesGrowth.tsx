@@ -29,13 +29,42 @@ export function SalesGrowth() {
         </div>
 
         <div className={styles.graph} data-aos="fade-left">
+          <div className={styles.arrowWrapper} data-aos="fade-up"
+          data-aos-duration="2000" 
+          >
+            <div className={styles.arrowRelative}>
+              <div className={styles.arrowImageWrapper}>
+              <Image
+              src="/assets/sales/Arrow.png"
+              alt="매출 상승 그래프"
+              width={160}
+              height={180}
+            />
+              </div>
+            <div className={styles.arrowText}>
+              <Counter value="200" isInView={isInView} type="percent">
+              </Counter>
+              <br/>상승</div>
+            </div>
+    
+          </div>
           <Image
-            src="/assets/sales/graph.webp"
+            src="/assets/sales/graph.png"
             alt="매출 상승 그래프"
             width={600}
             height={400}
             className={styles.graphImage}
           />
+        </div>
+        {/* 모바일 그래프 */}
+        <div className={styles.mobileGraph} data-aos="fade-left">
+          <Image
+              src="/assets/sales/graph.webp"
+              alt="매출 상승 그래프"
+              width={600}
+              height={400}
+              className={styles.graphImage}
+            />
         </div>
       </div>
 

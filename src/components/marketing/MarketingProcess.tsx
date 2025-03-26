@@ -26,7 +26,7 @@ export function MarketingProcess() {
                 </div>
 
                 <div className={styles.textContent}>
-                  <h3 style={{ color: "#bcbcbc" }}>타사</h3>
+                  <h3 style={{ color: "#bcbcbc" }} className={styles.itemTitle}>타사</h3>
                   <p>일반적인 정보 전달형 포스팅</p>
                 </div>
               </div>
@@ -42,7 +42,7 @@ export function MarketingProcess() {
                   />
                 </div>
                 <div className={styles.textContent}>
-                  <h3>오늘의 브랜딩</h3>
+                  <h3 className={styles.itemTitle}>오늘의 브랜딩</h3>
                   <p style={{ color: "#62fde3" }}>
                     전문지식이 접목된 <strong>칼럼형 포스팅</strong>
                   </p>
@@ -113,7 +113,7 @@ export function MarketingProcess() {
               <h3 className={styles.mainTitle}>초진 환자 관리하는 예약부도 방지 시스템</h3>
               <h2 className={styles.highlightTitle}>SNS MARKETING</h2>
               <p>
-                다양한 컨텐츠를 꾸준하게 노출하여 초진 환자의 접근성을 높이는 시스템, 오늘의 브랜딩이 만드는 사이클
+                다양한 컨텐츠를 꾸준하게 노출하여 초진 환자의 접근성을<br/> 높이는 시스템, 오늘의 브랜딩이 만드는 사이클
                 안에서 성장해보세요.
               </p>
             </div>

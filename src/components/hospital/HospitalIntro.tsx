@@ -56,7 +56,7 @@ export function HospitalIntro() {
 
           <div className={styles.pointsBox} data-aos="fade-up" data-aos-delay="800">
             <div className={styles.point}>
-              그냥 광고를 집행하는 것에서 끝나는 게 아니라,
+              그냥 광고를 집행하는 것에서 끝나는 게 아니라,&nbsp;
               <br />
               <strong>병원의 브랜드</strong>를 만들겠습니다.
             </div>
@@ -65,7 +65,7 @@ export function HospitalIntro() {
               환자들이 느낄 수 있도록 기획하겠습니다.
             </div>
             <div className={styles.point}>
-              병원이 단기적인 마케팅에 흔들리지 않도록,
+              병원이 단기적인 마케팅에 흔들리지 않도록,&nbsp;
               <br />
               <strong>지속적인 성장</strong>을 만들어 드리겠습니다.
             </div>
