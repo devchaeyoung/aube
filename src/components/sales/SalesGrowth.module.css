@@ -51,22 +51,31 @@
 .arrowWrapper {
   width:160px;
   height: 180px;
-  position: fixed;
+  position: absolute;
   right: 8rem;
   top: 1.2rem;
 }
-
-
-.arrowWrapper p{
-  display: absolute;
-  top:0;
-  left: 0;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  text-align: center;
-
+.arrowRelative{
+  position: relative;
+  height: 100%;
 }
+.arrowImageWrapper{
+  position: absolute;
+  top:0;
+  left:0;
+}
+.arrowText{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  z-index: 10;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+
 
 .graphImage {
   width: 100%;
@@ -112,6 +121,15 @@
 }
 .mobileGraph {
   display: none;
+}
+
+@media (max-width:1024px){
+  .graph {
+    display: none;
+  }
+  .mobileGraph {
+    display: block;
+  }
 }
 
 @media (max-width: 768px) {

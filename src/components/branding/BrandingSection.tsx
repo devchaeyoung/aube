@@ -25,7 +25,7 @@ const brandingData = [
 export function BrandingSection() {
   return (
     <section className={styles.branding}>
-      <div className={styles.titleContainer}>
+      <div className={styles.titleContainer} data-aos="fade-up">
         <TitleHeader title="오늘의 브랜딩은" subTitle="[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ] 합니다" />
       </div>
 
