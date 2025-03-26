@@ -42,9 +42,30 @@
 }
 
 .graph {
+  display: block;
   flex: 1;
   position: relative;
   margin-top: 4rem;
+}
+
+.arrowWrapper {
+  width:160px;
+  height: 180px;
+  position: fixed;
+  right: 8rem;
+  top: 1.2rem;
+}
+
+
+.arrowWrapper p{
+  display: absolute;
+  top:0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  text-align: center;
+
 }
 
 .graphImage {
@@ -57,7 +78,7 @@
   max-width: var(--max-width);
   margin: 0 auto;
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   line-height: 1.6;
   text-align: left;
 }
@@ -89,6 +110,9 @@
   font-size: 1.5rem;
   color: #4fffb0;
 }
+.mobileGraph {
+  display: none;
+}
 
 @media (max-width: 768px) {
   .container {
@@ -111,5 +135,11 @@
 
   .details {
     font-size: 12px;
+  }
+  .graph {
+    display: none;
+  }
+  .mobileGraph {
+    display: block;
   }
 }

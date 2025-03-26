@@ -26,7 +26,7 @@ export function BrandingSection() {
   return (
     <section className={styles.branding}>
       <div className={styles.titleContainer}>
-        <TitleHeader title="오늘의 브랜딩은" subTitle="[ AUBE] 합니다" />
+        <TitleHeader title="오늘의 브랜딩은" subTitle="[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ] 합니다" />
       </div>
 
       <div className={styles.cardContainer}>
@@ -55,10 +55,12 @@ export function BrandingSection() {
           >
             {brandingData.map((item, index) => (
               <SwiperSlide key={index}>
-                <div className={styles.card}>
-                  <h3>{item.title}</h3>
-                  <div className={styles.divider} />
-                  <p dangerouslySetInnerHTML={{ __html: item.description }} />
+                <div className={styles.mobileCardWrapper}>
+                  <div className={styles.card}>
+                    <h3>{item.title}</h3>
+                    <div className={styles.divider} />
+                    <p dangerouslySetInnerHTML={{ __html: item.description }} />
+                  </div>
                 </div>
               </SwiperSlide>
             ))}

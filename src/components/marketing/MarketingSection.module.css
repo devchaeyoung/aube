@@ -22,6 +22,7 @@
 }
 
 .card {
+  height: 226px;
   background-color: #111;
   padding: 32px;
   border: 2px solid #62fde3;
@@ -47,7 +48,7 @@
 }
 
 .cardHeader {
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 
 .checkLabel {
@@ -56,33 +57,40 @@
   background-position: center;
   display: inline-block;
   color: white;
-  padding: 8px 16px;
+  padding:10px 30px;
   border-radius: 20px;
   font-size: 1.2rem;
   margin-bottom: 16px;
 
   position: absolute;
   top: 24px;
-  left: 48px;
+  left:120px;
 }
 
 .card h3 {
   color: #62fde3;
   font-size: 2rem;
-  margin-bottom: 16px;
+  font-weight: 700;
 }
 
 .card p {
   font-size: 1.4rem;
-  line-height: 1.8;
+  line-height: 1.6;
   color: #fff;
 }
 
 .highlightCard {
+  width: 100%;
+  height: 226px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
   background: #111;
   border-radius: 50px;
   padding: 32px;
-  width: 100%;
+  
   text-align: center;
   box-shadow: 0 0 60px rgba(98, 253, 227, 0.6);
 }
@@ -90,12 +98,13 @@
 .highlightCard h3 {
   color: #62fde3;
   font-size: 2rem;
-  margin-bottom: 16px;
+  font-weight: 700;
+  margin-bottom: 18px;
 }
 
 .highlightCard p {
   font-size: 1.4rem;
-  line-height: 1.8;
+  line-height: 1.6;
   color: #fff;
 }
 
