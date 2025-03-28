@@ -18,17 +18,16 @@ export async function POST(req: Request) {
   const body = (await req.json()) as FormData;
   const { businessName, name, phone, message } = body;
 
-  // Nodemailer 설정
   const transporter = nodemailer.createTransport({
-    service: "Gmail",
+    host: process.env.HOST_SERVER,
+    service: process.env.HOST,
     auth: {
-      user: process.env.EMAIL,
-      pass: process.env.EMAIL_PASSWORD,
-    },
+        user: process.env.EMAIL,
+        pass: process.env.PASS_KEY
+    }
   });
 
   try {
-    // 이메일 내용 작성
     const emailContent = `
       <!DOCTYPE html>
       <html>
@@ -59,10 +58,9 @@ export async function POST(req: Request) {
       </html>
     `;
 
-    // 이메일 발송
     await transporter.sendMail({
       from: process.env.EMAIL,
-      to: "ckdwns9121@naver.com",
+      to: process.env.EMAIL,
       subject: `[문의] ${businessName} - ${name}님의 문의`,
       html: emailContent,
     });
