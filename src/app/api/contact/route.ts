@@ -9,12 +9,10 @@ interface FormData {
 }
 
 export async function GET() {
-  console.log("GET 요청");
   return NextResponse.json({ message: "Hello World" });
 }
 
 export async function POST(req: Request) {
-  console.log("POST 요청");
   const body = (await req.json()) as FormData;
   const { businessName, name, phone, message } = body;
 
